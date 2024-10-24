@@ -1,0 +1,91 @@
+@font-face {
+    font-family: 'Ubuntu-Bold';
+    src: url('Ubuntu-Bold.eot');
+    src: url('Ubuntu-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Ubuntu-Bold.woff2') format('woff2'),
+        url('Ubuntu-Bold.woff') format('woff'),
+        url('Ubuntu-Bold.ttf') format('truetype'),
+        url('Ubuntu-Bold.svg#Ubuntu-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ubuntu-Regular';
+    src: url('Ubuntu-Regular.eot');
+    src: url('Ubuntu-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Ubuntu-Regular.woff2') format('woff2'),
+        url('Ubuntu-Regular.woff') format('woff'),
+        url('Ubuntu-Regular.ttf') format('truetype'),
+        url('Ubuntu-Regular.svg#Ubuntu-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ubuntu-Medium';
+    src: url('Ubuntu-Medium.eot');
+    src: url('Ubuntu-Medium.eot?#iefix') format('embedded-opentype'),
+        url('Ubuntu-Medium.woff2') format('woff2'),
+        url('Ubuntu-Medium.woff') format('woff'),
+        url('Ubuntu-Medium.ttf') format('truetype'),
+        url('Ubuntu-Medium.svg#Ubuntu-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter-Regular';
+    src: url('Inter24pt-Regular.eot');
+    src: url('Inter24pt-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Inter24pt-Regular.woff2') format('woff2'),
+        url('Inter24pt-Regular.woff') format('woff'),
+        url('Inter24pt-Regular.ttf') format('truetype'),
+        url('Inter24pt-Regular.svg#Inter24pt-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter-Bold';
+    src: url('Inter28pt-Bold.eot');
+    src: url('Inter28pt-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Inter28pt-Bold.woff2') format('woff2'),
+        url('Inter28pt-Bold.woff') format('woff'),
+        url('Inter28pt-Bold.ttf') format('truetype'),
+        url('Inter28pt-Bold.svg#Inter28pt-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter-Medium';
+    src: url('Inter24pt-Medium.eot');
+    src: url('Inter24pt-Medium.eot?#iefix') format('embedded-opentype'),
+        url('Inter24pt-Medium.woff2') format('woff2'),
+        url('Inter24pt-Medium.woff') format('woff'),
+        url('Inter24pt-Medium.ttf') format('truetype'),
+        url('Inter24pt-Medium.svg#Inter24pt-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter-SemiBold';
+    src: url('Inter24pt-SemiBold.eot');
+    src: url('Inter24pt-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('Inter24pt-SemiBold.woff2') format('woff2'),
+        url('Inter24pt-SemiBold.woff') format('woff'),
+        url('Inter24pt-SemiBold.ttf') format('truetype'),
+        url('Inter24pt-SemiBold.svg#Inter24pt-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
