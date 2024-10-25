@@ -1,3 +1,6 @@
+/* **********************************
+   ***********Footer Start***********
+   ********************************** */
 .footer {
     padding-block: 150px 113px;
 
@@ -14,7 +17,9 @@
     }
 
     .container_fluid {
+
         .footer_inr {
+
             .logo_social_otr {
                 justify-content: space-between;
                 align-items: center;
@@ -23,8 +28,11 @@
                 padding-bottom: 30px;
 
                 .col_logo_otr {
+
                     .logo_main {
+
                         .logo_otr {
+
                             .logo {
                                 width: 195px;
                                 height: auto;
@@ -49,6 +57,7 @@
                         overflow: hidden;
                         -webkit-line-clamp: 3;
                         -webkit-box-orient: vertical;
+                        text-transform: capitalize;
                         margin-top: 21px;
                         color: var(--bs-secondary-02);
 
@@ -75,17 +84,16 @@
                     }
 
                     .social_otr {
+
                         .social_ul {
                             display: flex;
                             align-items: center;
-                            gap: 0 30px;
-
-                            @media (max-width: 1199px) {
-                                gap: 10px 20px;
-                            }
+                            gap: 0px 30px;
 
                             .social_li {
+
                                 .social_a {
+
                                     .icon {
                                         font-size: 22px;
                                         color: var(--bs-tint4-grey);
@@ -107,14 +115,14 @@
             }
 
             .links_contact_otr {
-                padding-block: 30px 50px;
                 display: grid;
                 grid-template-columns: repeat(5, 0.5fr);
                 gap: 24px;
+                padding-block: 30px 50px;
 
                 @media (max-width: 991.98px) {
-                    padding-block: 30px;
                     grid-template-columns: repeat(3, 1fr);
+                    padding-block: 30px;
                 }
 
                 @media (max-width: 767.98px) {
@@ -128,6 +136,7 @@
                 .col_link_otr {
 
                     .col_link_inr {
+
                         .heading {
                             margin-bottom: 20px;
                             color: var(--bs-secondary-01);
@@ -138,15 +147,18 @@
                         }
 
                         .menu_otr {
+
                             .menu_ul {
                                 display: flex;
                                 flex-direction: column;
                                 gap: 6px 0;
 
                                 .menu_li {
+
                                     .menu_a {
                                         color: var(--bs-secondary-02);
-                                        transition: all 0.3s;
+                                        transition: var(--transitions);
+                                        text-transform: capitalize;
 
                                         &:hover {
                                             color: var(--bs-tint-purple);
@@ -174,11 +186,12 @@
 
                     .address {
                         color: var(--bs-secondary-02);
+                        text-transform: capitalize;
 
                         .address_link {
                             display: inline;
                             color: var(--bs-secondary-02);
-                            transition: all 0.3s;
+                            transition: var(--transitions);
 
                             &:hover {
                                 color: var(--bs-tint-purple);
@@ -186,13 +199,13 @@
                         }
                     }
 
-                    .email_otr {
+                    .contact_otr {
                         color: var(--bs-secondary-02);
+                        text-transform: capitalize;
 
-                        .email_link,
-                        .phoneNo_link {
+                        .contact_link {
                             color: var(--bs-secondary-01);
-                            transition: all 0.3s;
+                            transition: var(--transitions);
 
                             &:hover {
                                 color: var(--bs-tint-purple);
@@ -212,12 +225,12 @@
                         }
 
                         @media (max-width: 575.98px) {
-                            padding: 20px;
                             border-radius: 18px;
                         }
 
                         .text {
                             color: var(--bs-shade1-red);
+                            text-transform: capitalize;
 
                             .inr_text {
                                 color: var(--bs-secondary-01);
@@ -238,11 +251,10 @@
                     padding-block: 18px;
                 }
 
-
                 .copyright_text {
                     color: var(--bs-secondary-02);
                     text-transform: capitalize;
-                    font: 18px / 160% "Inter-Regular";
+
 
                     @media (max-width: 575.98px) {
                         font-size: 14px;
@@ -250,7 +262,7 @@
 
                     .link {
                         color: var(--bs-secondary-02);
-                        transition: all 0.3s;
+                        transition: var(--transitions);
 
                         &:hover {
                             color: var(--bs-tint-purple);
@@ -261,3 +273,7 @@
         }
     }
 }
+
+/* **********************************
+   ************Footer End************
+   ********************************** */

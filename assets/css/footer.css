@@ -1,3 +1,6 @@
+/* **********************************
+   ***********Footer Start***********
+   ********************************** */
 .footer {
   padding-block: 150px 113px;
 }
@@ -47,6 +50,7 @@
   overflow: hidden;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
+  text-transform: capitalize;
   margin-top: 21px;
   color: var(--bs-secondary-02);
 }
@@ -74,12 +78,7 @@
 .footer .container_fluid .footer_inr .logo_social_otr .col_social_otr .social_otr .social_ul {
   display: flex;
   align-items: center;
-  gap: 0 30px;
-}
-@media (max-width: 1199px) {
-  .footer .container_fluid .footer_inr .logo_social_otr .col_social_otr .social_otr .social_ul {
-    gap: 10px 20px;
-  }
+  gap: 0px 30px;
 }
 .footer .container_fluid .footer_inr .logo_social_otr .col_social_otr .social_otr .social_ul .social_li .social_a .icon {
   font-size: 22px;
@@ -95,15 +94,15 @@
   color: var(--bs-primary-01);
 }
 .footer .container_fluid .footer_inr .links_contact_otr {
-  padding-block: 30px 50px;
   display: grid;
   grid-template-columns: repeat(5, 0.5fr);
   gap: 24px;
+  padding-block: 30px 50px;
 }
 @media (max-width: 991.98px) {
   .footer .container_fluid .footer_inr .links_contact_otr {
-    padding-block: 30px;
     grid-template-columns: repeat(3, 1fr);
+    padding-block: 30px;
   }
 }
 @media (max-width: 767.98px) {
@@ -132,7 +131,8 @@
 }
 .footer .container_fluid .footer_inr .links_contact_otr .col_link_otr .col_link_inr .menu_otr .menu_ul .menu_li .menu_a {
   color: var(--bs-secondary-02);
-  transition: all 0.3s;
+  transition: var(--transitions);
+  text-transform: capitalize;
 }
 .footer .container_fluid .footer_inr .links_contact_otr .col_link_otr .col_link_inr .menu_otr .menu_ul .menu_li .menu_a:hover {
   color: var(--bs-tint-purple);
@@ -153,25 +153,25 @@
 }
 .footer .container_fluid .footer_inr .links_contact_otr .col_contact_otr .address {
   color: var(--bs-secondary-02);
+  text-transform: capitalize;
 }
 .footer .container_fluid .footer_inr .links_contact_otr .col_contact_otr .address .address_link {
   display: inline;
   color: var(--bs-secondary-02);
-  transition: all 0.3s;
+  transition: var(--transitions);
 }
 .footer .container_fluid .footer_inr .links_contact_otr .col_contact_otr .address .address_link:hover {
   color: var(--bs-tint-purple);
 }
-.footer .container_fluid .footer_inr .links_contact_otr .col_contact_otr .email_otr {
+.footer .container_fluid .footer_inr .links_contact_otr .col_contact_otr .contact_otr {
   color: var(--bs-secondary-02);
+  text-transform: capitalize;
 }
-.footer .container_fluid .footer_inr .links_contact_otr .col_contact_otr .email_otr .email_link,
-.footer .container_fluid .footer_inr .links_contact_otr .col_contact_otr .email_otr .phoneNo_link {
+.footer .container_fluid .footer_inr .links_contact_otr .col_contact_otr .contact_otr .contact_link {
   color: var(--bs-secondary-01);
-  transition: all 0.3s;
+  transition: var(--transitions);
 }
-.footer .container_fluid .footer_inr .links_contact_otr .col_contact_otr .email_otr .email_link:hover,
-.footer .container_fluid .footer_inr .links_contact_otr .col_contact_otr .email_otr .phoneNo_link:hover {
+.footer .container_fluid .footer_inr .links_contact_otr .col_contact_otr .contact_otr .contact_link:hover {
   color: var(--bs-tint-purple);
 }
 .footer .container_fluid .footer_inr .links_contact_otr .col_contact_otr .disclaimer_otr {
@@ -188,12 +188,12 @@
 }
 @media (max-width: 575.98px) {
   .footer .container_fluid .footer_inr .links_contact_otr .col_contact_otr .disclaimer_otr {
-    padding: 20px;
     border-radius: 18px;
   }
 }
 .footer .container_fluid .footer_inr .links_contact_otr .col_contact_otr .disclaimer_otr .text {
   color: var(--bs-shade1-red);
+  text-transform: capitalize;
 }
 .footer .container_fluid .footer_inr .links_contact_otr .col_contact_otr .disclaimer_otr .text .inr_text {
   color: var(--bs-secondary-01);
@@ -213,7 +213,6 @@
 .footer .container_fluid .footer_inr .copyright_otr .copyright_text {
   color: var(--bs-secondary-02);
   text-transform: capitalize;
-  font: 18px/160% "Inter-Regular";
 }
 @media (max-width: 575.98px) {
   .footer .container_fluid .footer_inr .copyright_otr .copyright_text {
@@ -222,8 +221,12 @@
 }
 .footer .container_fluid .footer_inr .copyright_otr .copyright_text .link {
   color: var(--bs-secondary-02);
-  transition: all 0.3s;
+  transition: var(--transitions);
 }
 .footer .container_fluid .footer_inr .copyright_otr .copyright_text .link:hover {
   color: var(--bs-tint-purple);
 }
+
+/* **********************************
+   ************Footer End************
+   ********************************** */

@@ -1,20 +1,212 @@
 /* **********************************
-   ***********Header Start***********
+   *******Overlay Section Start******
    ********************************** */
-.header {
 
-    .alert_otr {
-        background-color: #e8f8ff;
-        padding-block: 20px;
+.overlay_main {
+    .offcanvas {
+        .offcanvas-body {
+            padding: 35px 20px 35px;
 
-        @media (max-width: 991.98px) {
-            padding-block: 12px;
-        }
+            @media (max-width: 575.98px) {
+                padding-top: 25px;
+            }
 
-        .alert_text {
-            color: #526f89;
+            .logo_main {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .logo_otr {
+                    .logo_img {
+                        width: 170px;
+                        height: auto;
+                        object-fit: contain;
+
+                        @media (max-width: 767.98px) {
+                            width: 150px;
+                        }
+
+                        @media (max-width: 420px) {
+                            width: 120px;
+                        }
+                    }
+                }
+
+                .close_icon_otr {
+                    border-radius: 100%;
+                    background-color: var(--bs-tint12-grey);
+                    width: 40px;
+                    height: 40px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    transition: all 0.3s;
+                    cursor: pointer;
+
+                    .icon {
+                        font-size: 24px;
+                        -webkit-text-stroke: 2px;
+                        color: var(--bs-navyBlue);
+                        cursor: pointer;
+                        transition: var(--transitions);
+
+                        &:hover {
+                            color: var(--bs-primary-01);
+                        }
+
+                        @media (max-width: 767.98px) {
+                            font-size: 20px;
+                        }
+
+                        @media (max-width: 420px) {
+                            font-size: 18px;
+                        }
+                    }
+
+                    &:hover {
+                        background-color: var(--bs-secondary-01);
+
+                        .icon {
+                            color: var(--bs-tint12-grey);
+                        }
+                    }
+                }
+            }
+
+            .accordion {
+                margin-top: 30px;
+
+                @media (max-width: 575.98px) {
+                    margin-top: 20px;
+                }
+
+                .menu_ul {
+                    display: grid;
+                    gap: 18px;
+
+                    .menu_li {
+                        .menu_a {
+                            color: var(--bs-navyBlue);
+                            transition: var(--transitions);
+
+                            &:hover {
+                                color: var(--bs-primary-01);
+                            }
+                        }
+
+                        .accordion-item {
+                            border: none;
+
+                            .accordion-header {
+                                .accordion-button {
+                                    display: flex;
+                                    justify-content: space-between;
+                                    align-items: center;
+                                    background: transparent;
+                                    box-shadow: none;
+                                    padding: 0;
+                                    transition: var(--transitions);
+
+                                    .icon {
+                                        transition: var(--transitions);
+                                    }
+
+                                    &:not(.collapsed) {
+                                        color: var(--bs-primary-01);
+
+                                        .icon {
+                                            transform: rotate(-180deg);
+                                        }
+                                    }
+
+                                    &::after {
+                                        content: none;
+                                    }
+
+                                    &:hover {
+                                        color: var(--bs-primary-01);
+                                    }
+                                }
+                            }
+
+                            .accordion-collapse {
+
+                                .accordion-body {
+                                    padding: 16px 12px;
+
+                                    .dropdown_ul {
+                                        display: grid;
+                                        gap: 8px 0;
+
+                                        .dropdown_li {
+
+                                            .dropdown_a {
+                                                color: var(--bs-navyBlue);
+                                                transition: var(--transitions);
+
+                                                &:hover {
+                                                    color: var(--bs-primary-01);
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .action_otr {
+
+                            .login_btn {
+                                justify-content: center;
+                                align-items: center;
+                            }
+                        }
+                    }
+                }
+
+            }
+
+            .menu_action {
+                margin-top: 25px;
+                gap: 25px 0;
+
+                .menu_otr {}
+
+                .action_otr {
+                    .login_btn {
+                        border-radius: 12px;
+                        width: 100%;
+                        text-align: center;
+                        padding: 14px 31px;
+                        color: var(--bs-white);
+                    }
+                }
+            }
         }
     }
+}
+
+/* **********************************
+   *******Overlay Section End********
+   ********************************** */
+/* **********************************
+   ***********Header Start***********
+   ********************************** */
+.alert_otr {
+    background-color: #e8f8ff;
+    padding-block: 20px;
+
+    @media (max-width: 991.98px) {
+        padding-block: 12px;
+    }
+
+    .alert_text {
+        color: #526f89;
+    }
+}
+
+.header {
+
 
     .container_fluid {
 
@@ -141,7 +333,7 @@
                                 position: absolute;
                                 top: 20px;
                                 left: 0;
-                                width: 250px;
+                                width: 200px;
                                 visibility: hidden;
                                 opacity: 0;
                                 padding-top: 10px;

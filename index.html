@@ -2,41 +2,160 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CrytoPin</title>
-    <link rel="shortcut icon" href="/assets/img/fav-icon.png" type="image/x-icon">
-    <link rel="stylesheet" href="/assets/libs/bootstrap/dist/css/bootstrap.css">
-    <link rel="stylesheet" href="/assets/libs/bootstrap-icons/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="/assets/libs/swiper/swiper-bundle.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CryptoPin</title>
+    <link rel="shortcut icon" href="/assets/img/fav-icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="/assets/libs/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="/assets/libs/bootstrap-icons/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="/assets/libs/swiper/swiper-bundle.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="/assets/css/header.css">
-    <link rel="stylesheet" href="/assets/css/footer.css">
-    <link rel="stylesheet" href="/assets/css/utils.css">
-    <link rel="stylesheet" href="/assets/fonts/fonts.css">
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/header.css" />
+    <link rel="stylesheet" href="/assets/css/footer.css" />
+    <link rel="stylesheet" href="/assets/css/utils.css" />
+    <link rel="stylesheet" href="/assets/fonts/fonts.css" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
 </head>
 
 <body>
     <!-- ===================================
+                Overlay Start Here
+         =================================== -->
+    <div class="overlay_main">
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel"
+            aria-hidden="true">
+            <div class="offcanvas-body">
+                <div class="logo_main">
+                    <a href="#" class="logo_otr">
+                        <img src="./assets/img/logo.svg" alt="Logo" class="logo_img" />
+                    </a>
+                    <div class="close_icon_otr" data-bs-dismiss="offcanvas" aria-label="Close">
+                        <i class="icon bi bi-x-lg"></i>
+                    </div>
+                </div>
+                <div class="accordion" id="accordionExample">
+                    <ul class="menu_ul">
+                        <li class="menu_li">
+                            <a href="#" class="menu_a heading-XS-Medium">Home</a>
+                        </li>
+                        <li class="menu_li">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        <p class="menu_text heading-XS-Medium">About</p>
+                                        <i class="icon bi bi-caret-down-fill"></i>
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <ul class="dropdown_ul">
+                                            <li class="dropdown_li">
+                                                <a href="#" class="dropdown_a heading-XS-Medium">About</a>
+                                            </li>
+                                            <li class="dropdown_li">
+                                                <a href="#" class="dropdown_a heading-XS-Medium">About Token</a>
+                                            </li>
+                                            <li class="dropdown_li">
+                                                <a href="#" class="dropdown_a heading-XS-Medium">Tokens</a>
+                                            </li>
+                                            <li class="dropdown_li">
+                                                <a href="#" class="dropdown_a heading-XS-Medium">Tokens Single</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="menu_li">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                        <p class="menu_text heading-XS-Medium">Pages</p>
+                                        <i class="icon bi bi-caret-down-fill"></i>
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <ul class="dropdown_ul">
+                                            <li class="dropdown_li">
+                                                <a href="#" class="dropdown_a heading-XS-Medium">Features</a>
+                                            </li>
+                                            <li class="dropdown_li">
+                                                <a href="#" class="dropdown_a heading-XS-Medium">Career</a>
+                                            </li>
+                                            <li class="dropdown_li">
+                                                <a href="#" class="dropdown_a heading-XS-Medium">Blog</a>
+                                            </li>
+                                            <li class="dropdown_li">
+                                                <a href="#" class="dropdown_a heading-XS-Medium">Terms</a>
+                                            </li>
+                                            <li class="dropdown_li">
+                                                <a href="#" class="dropdown_a heading-XS-Medium">Privacy</a>
+                                            </li>
+                                            <li class="dropdown_li">
+                                                <a href="#" class="dropdown_a heading-XS-Medium">404</a>
+                                            </li>
+                                            <li class="dropdown_li">
+                                                <a href="#" class="dropdown_a heading-XS-Medium">LIcenses</a>
+                                            </li>
+                                            <li class="dropdown_li">
+                                                <a href="#" class="dropdown_a heading-XS-Medium">Password</a>
+                                            </li>
+                                            <li class="dropdown_li">
+                                                <a href="#" class="dropdown_a heading-XS-Medium">Changelog</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="menu_li">
+                            <a href="#" class="menu_a heading-XS-Medium">Pricing</a>
+                        </li>
+                        <li class="menu_li">
+                            <a href="#" class="menu_a heading-XS-Medium">Contact</a>
+                        </li>
+                        <li class="menu_li">
+                            <div class="action_otr">
+                                <a href="#" class="login_btn primary_btn">
+                                    <span class="text">Login</span>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ===================================
+                Overlay End Here
+         =================================== -->
+
+    <!-- ===================================
                   Header Start Here
          =================================== -->
+    <div class="alert_otr">
+        <marquee class="alert_text heading-XS" loop="true">
+            Buy & Sell Bitcoin thereum and 100+ cryptos in minutes. Register now & get ₹100 cashback on your first trade
+            of ₹500 or
+            more!
+        </marquee>
+    </div>
     <header class="header">
-        <div class="alert_otr">
-            <marquee class="alert_text heading-XS" loop="true">Buy & Sell Bitcoin, Ethereum and 100+ cryptos in minutes.
-                Register now & get ₹100
-                cashback on your first trade of ₹500
-                or more!</marquee>
-        </div>
         <div class="container_fluid">
             <div class="header_inr">
                 <div class="logo_main">
                     <a href="#" class="logo_otr">
-                        <img class="logo" src="/assets/img/logo.svg" alt="Logo">
+                        <img class="logo" src="/assets/img/logo.svg" alt="Logo" />
                     </a>
-                    <div class="menu_icon_otr">
+                    <div class="menu_icon_otr" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                        aria-controls="offcanvasRight">
                         <i class="icon bi bi-list"></i>
                     </div>
                 </div>
@@ -72,45 +191,6 @@
                             </li>
                             <li class="menu_li">
                                 <div class="menu_a heading-XS-Medium">
-                                    <p class="menu_text">Career</p>
-                                    <i class="icon bi bi-caret-down-fill"></i>
-                                </div>
-                                <div class="dropdown_otr">
-                                    <div class="dropdown_inr">
-                                        <ul class="dropdown_ul">
-                                            <li class="dropdown_li">
-                                                <a href="#" class="dropdown_a heading-XS-Medium">Careers</a>
-                                            </li>
-                                            <li class="dropdown_li">
-                                                <a href="#" class="dropdown_a heading-XS-Medium">Career Opening Job</a>
-                                            </li>
-                                            <li class="dropdown_li">
-                                                <a href="#" class="dropdown_a heading-XS-Medium">Career Single</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="menu_li">
-                                <div class="menu_a heading-XS-Medium">
-                                    <p class="menu_text">Blog</p>
-                                    <i class="icon bi bi-caret-down-fill"></i>
-                                </div>
-                                <div class="dropdown_otr">
-                                    <div class="dropdown_inr">
-                                        <ul class="dropdown_ul">
-                                            <li class="dropdown_li">
-                                                <a href="#" class="dropdown_a heading-XS-Medium">Blog</a>
-                                            </li>
-                                            <li class="dropdown_li">
-                                                <a href="#" class="dropdown_a heading-XS-Medium">Blog Single</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="menu_li">
-                                <div class="menu_a heading-XS-Medium">
                                     <p class="menu_text">Pages</p>
                                     <i class="icon bi bi-caret-down-fill"></i>
                                 </div>
@@ -119,6 +199,9 @@
                                         <ul class="dropdown_ul">
                                             <li class="dropdown_li">
                                                 <a href="#" class="dropdown_a heading-XS-Medium">Features</a>
+                                            </li>
+                                            <li class="dropdown_li">
+                                                <a href="#" class="dropdown_a heading-XS-Medium">Career</a>
                                             </li>
                                             <li class="dropdown_li">
                                                 <a href="#" class="dropdown_a heading-XS-Medium">Blog</a>
@@ -154,7 +237,7 @@
                         </ul>
                     </nav>
                     <div class="action_otr">
-                        <a href="#" class="primary_btn">
+                        <a href="#" class="login_btn primary_btn">
                             <span class="text">Login</span>
                         </a>
                     </div>
@@ -165,6 +248,1070 @@
     <!-- ===================================
                    Header End Here
          =================================== -->
+
+    <!-- ===================================
+              Counters Section Start Here
+         =================================== -->
+    <section class="counters">
+        <div class="container">
+            <div class="counters-inr">
+                <div class="row">
+                    <div class="col-8 col-counters-otr">
+                        <div class="col-counters-inr row">
+                            <div class="col-6 counter-item-otr">
+                                <h2 class="heading heading-h2">$12B<span class="heading-inr">+</span></h2>
+                                <p class="desc heading-S">Assets management</p>
+                            </div>
+                            <div class="col-6 counter-item-otr">
+                                <h2 class="heading heading-h2">200<span class="heading-inr">+</span></h2>
+                                <p class="desc heading-S">Supported crypto currencies</p>
+                            </div>
+                            <div class="col-6 counter-item-otr">
+                                <h2 class="heading heading-h2">0.10<span class="heading-inr">%</span></h2>
+                                <p class="desc heading-S">Lowest transaction fees</p>
+                            </div>
+                            <div class="col-6 counter-item-otr">
+                                <h2 class="heading heading-h2">5M<span class="heading-inr">+</span></h2>
+                                <p class="desc heading-S">Cryptop users worldwide</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 col-rating-otr">
+                        <div class="col-rating-inr">
+                            <div class="icon-otr">
+                                <img src="./assets/img/rating-badge.png" alt="Badge" class="rate-badge">
+                            </div>
+                            <div class="content-otr">
+                                <div class="rating-desc">
+                                    <div class="rating-ul">
+                                        <li class="rating-li">
+                                            <i class="rate-icon iconbi bi-star-fill"></i>
+                                        </li>
+                                        <li class="rating-li">
+                                            <i class="rate-icon iconbi bi-star-fill"></i>
+                                        </li>
+                                        <li class="rating-li">
+                                            <i class="rate-icon iconbi bi-star-fill"></i>
+                                        </li>
+                                        <li class="rating-li">
+                                            <i class="rate-icon iconbi bi-star-fill"></i>
+                                        </li>
+                                        <li class="rating-li">
+                                            <i class="rate-icon iconbi bi-star-fill"></i>
+                                        </li>
+                                    </div>
+                                    <p class="desc heading-S">Loved by teams worldwide <br> Trusted by 10 Million+</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ===================================
+              Counters Section End Here
+         =================================== -->
+
+    <!-- ===================================
+            About Us Section Start Here
+         =================================== -->
+    <section class="about-us">
+        <div class="container">
+            <div class="about-us-inr">
+                <div class="row">
+                    <div class="col-lg-6 col-content-otr">
+                        <div class="col-content-inr">
+                            <h2 class="heading heading-h4">Explore endless possibilities with <span
+                                    class="heading-inr">Cryptop</span></h2>
+                            <p class="desc heading-S">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do
+                                eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua ut dolor sit</p>
+                            <div class="tags-otr">
+                                <div class="tag-otr">
+                                    <div class="icon-otr">
+                                        <i class="icon bi bi-clock"></i>
+                                    </div>
+                                    <p class="desc heading-M-I-Medium">24/7 Support</p>
+                                </div>
+                                <div class="tag-otr">
+                                    <div class="icon-otr">
+                                        <i class="icon bi bi-shield-check"></i>
+                                    </div>
+                                    <p class="desc heading-M-I-Medium">99% Secured</p>
+                                </div>
+                            </div>
+                            <div class="action-otr">
+                                <a href="#" class="get-started-btn secondary-btn">
+                                    <span class="text">Get Started</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-img-otr">
+                        <div class="col-img-inr">
+                            <img src="./assets/img/charts-img.png" alt="Charts" class="img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ===================================
+            About Us Section End Here
+         =================================== -->
+
+    <!-- ===================================
+            Client Logo Section Start Here
+         =================================== -->
+    <section class="client-logos">
+        <div class="container">
+            <div class="client-logos-inr">
+                <div class="clients-otr">
+                    <ul class="clients-ul">
+                        <li class="client-li">
+                            <a href="#" class="client-a">
+                                <img src="./assets/img/client-logo-1.png" alt="Client Logo" class="client-img">
+                            </a>
+                        </li>
+                        <li class="client-li">
+                            <a href="#" class="client-a">
+                                <img src="./assets/img/client-logo-2.png" alt="Client Logo" class="client-img">
+                            </a>
+                        </li>
+                        <li class="client-li">
+                            <a href="#" class="client-a">
+                                <img src="./assets/img/client-logo-3.png" alt="Client Logo" class="client-img">
+                            </a>
+                        </li>
+                        <li class="client-li">
+                            <a href="#" class="client-a">
+                                <img src="./assets/img/client-logo-4.png" alt="Client Logo" class="client-img">
+                            </a>
+                        </li>
+                        <li class="client-li">
+                            <a href="#" class="client-a">
+                                <img src="./assets/img/client-logo-5.png" alt="Client Logo" class="client-img">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="clients-otr">
+                    <ul class="clients-ul">
+                        <li class="client-li">
+                            <a href="#" class="client-a">
+                                <img src="./assets/img/client-logo-6.png" alt="Client Logo" class="client-img">
+                            </a>
+                        </li>
+                        <li class="client-li">
+                            <a href="#" class="client-a">
+                                <img src="./assets/img/client-logo-7.png" alt="Client Logo" class="client-img">
+                            </a>
+                        </li>
+                        <li class="client-li">
+                            <a href="#" class="client-a">
+                                <img src="./assets/img/client-logo-8.png" alt="Client Logo" class="client-img">
+                            </a>
+                        </li>
+                        <li class="client-li">
+                            <a href="#" class="client-a">
+                                <img src="./assets/img/client-logo-9.png" alt="Client Logo" class="client-img">
+                            </a>
+                        </li>
+                        <li class="client-li">
+                            <a href="#" class="client-a">
+                                <img src="./assets/img/client-logo-10.png" alt="Client Logo" class="client-img">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ===================================
+            Client Logo Section End Here
+         =================================== -->
+
+    <!-- ===================================
+            Grow Crypto Section Start Here
+         =================================== -->
+    <section class="grow-cryptocurrency">
+        <div class="container">
+            <div class="grow-cryptocurrency-inr">
+                <div class="wrapper mx-auto text-center">
+                    <h2 class="heading heading-h2">Invest & Grow your cryptocurrency <span
+                            class="heading-inr">Portfolio</span></h2>
+                </div>
+                <div class="row">
+                    <div class="col-4 col-card-otr">
+                        <div class="col-card-inr">
+                            <div class="content-otr">
+                                <h6 class="heading heading-h6-Medium">More than a typical crypto wallet</h6>
+                                <p class="desc heading-S">Lorem ipsum dolor sit amet consect eturadipiscing eiusmod</p>
+                                <div class="action-otr">
+                                    <a href="#" class="read-more-btn heading-M-I-Medium">Read More</a>
+                                </div>
+                            </div>
+                            <div class="img-otr">
+                                <img src="./assets/img/crypto-wallet.png" alt="Image" class="img">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 col-card-otr">
+                        <div class="col-card-inr">
+                            <div class="img-otr">
+                                <img src="./assets/img/binance-pay.png" alt="Image" class="img">
+                            </div>
+                            <div class="content-otr">
+                                <h6 class="heading heading-h6-Medium">Grow your business with Binance Pay</h6>
+                                <p class="desc heading-S">Lorem ipsum dolor sit amet consect eturadipiscing eiusmod</p>
+                                <div class="action-otr">
+                                    <a href="#" class="read-more-btn heading-M-I-Medium">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 col-card-otr">
+                        <div class="col-card-inr">
+                            <div class="content-otr">
+                                <h6 class="heading heading-h6-Medium">A crypto wallet from the future</h6>
+                                <p class="desc heading-S">Lorem ipsum dolor sit amet consect eturadipiscing eiusmod</p>
+                                <div class="action-otr">
+                                    <a href="#" class="read-more-btn heading-M-I-Medium">Read More</a>
+                                </div>
+                            </div>
+                            <div class="img-otr">
+                                <img src="./assets/img/bitcoin-person.png" alt="Image" class="img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ===================================
+            Grow Crypto Section End Here
+         =================================== -->
+
+    <!-- ===================================
+              Products Section Start Here
+         =================================== -->
+    <section class="products">
+        <div class="container">
+            <div class="products-inr">
+                <div class="wrapper">
+                    <p class="desc heading-S">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua ut dolor sit</p>
+                    <div class="action-otr">
+                        <a href="#" class="get-started-tn primary-btn">
+                            <span class="text">Get Started</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="main-content-otr">
+                    <div class="heading-action-otr">
+                        <h2 class="heading heading-h4">Your Money...Your Choice</h2>
+                        <p class="desc heading-S">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod
+                            tempor incididunt</p>
+                        <div class="action-main">
+                            <div class="action-otr">
+                                <a href="#" class="secondary-btn">
+                                    <span class="text">Stock</span>
+                                </a>
+                            </div>
+                            <div class="action-otr">
+                                <a href="#" class="secondary-btn">
+                                    <span class="text">Stock</span>
+                                </a>
+                            </div>
+                            <div class="action-otr">
+                                <a href="#" class="secondary-btn">
+                                    <span class="text">Stock</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ===================================
+              Products Section End Here
+         =================================== -->
+
+    <!-- ===================================
+              Why Us Section Start Here
+         =================================== -->
+    <section class="why-US">
+        <div class="container">
+            <div class="why-US-inr">
+                <div class="wrapper">
+                    <h2 class="heading heading-h2 text-capitalize">Fully featured to buy, trade and invest in
+                        <span class="heading-inr">Cryptop</span>
+                    </h2>
+                </div>
+                <div class="row">
+                    <div class="col-4 col-card-otr">
+                        <div class="col-card-inr">
+                            <div class="icon-otr">
+                                <img src="./assets/img/chart-ratio-icon.svg" alt="Icon" class="icon">
+                            </div>
+                            <div class="content-otr">
+                                <a href="#" class="heading heading-h6-Medium">Real-time trading</a>
+                                <p class="desc heading-S">Organically grow the holistic world view of disruptive
+                                    innovati workplace diversity empowerment.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 col-card-otr">
+                        <div class="col-card-inr">
+                            <div class="icon-otr">
+                                <img src="./assets/img/wallet-icon.svg" alt="Icon" class="icon">
+                            </div>
+                            <div class="content-otr">
+                                <a href="#" class="heading heading-h6-Medium">Easy to create wallet</a>
+                                <p class="desc heading-S">Organically grow the holistic world view of disruptive
+                                    innovati workplace diversity empowerment.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 col-card-otr">
+                        <div class="col-card-inr">
+                            <div class="icon-otr">
+                                <img src="./assets/img/security-icon.svg" alt="Icon" class="icon">
+                            </div>
+                            <div class="content-otr">
+                                <a href="#" class="heading heading-h6-Medium">Safe & secure</a>
+                                <p class="desc heading-S">Organically grow the holistic world view of disruptive
+                                    innovati workplace diversity empowerment.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 col-card-otr">
+                        <div class="col-card-inr">
+                            <div class="icon-otr">
+                                <img src="./assets/img/to-do-list-icon.svg" alt="Icon" class="icon">
+                            </div>
+                            <div class="content-otr">
+                                <a href="#" class="heading heading-h6-Medium">Super Fast KYC</a>
+                                <p class="desc heading-S">Organically grow the holistic world view of disruptive
+                                    innovati workplace diversity empowerment.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 col-card-otr">
+                        <div class="col-card-inr">
+                            <div class="icon-otr">
+                                <img src="./assets/img/transfer-icon.svg" alt="Icon" class="icon">
+                            </div>
+                            <div class="content-otr">
+                                <a href="#" class="heading heading-h6-Medium">Send & receive anytime</a>
+                                <p class="desc heading-S">Organically grow the holistic world view of disruptive
+                                    innovati workplace diversity empowerment.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 col-card-otr">
+                        <div class="col-card-inr">
+                            <div class="icon-otr">
+                                <img src="./assets/img/analytics-icon.svg" alt="Icon" class="icon">
+                            </div>
+                            <div class="content-otr">
+                                <a href="#" class="heading heading-h6-Medium">Reports & analytics</a>
+                                <p class="desc heading-S">Organically grow the holistic world view of disruptive
+                                    innovati workplace diversity empowerment.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="action-main">
+                    <div class="action-otr">
+                        <a href="#" class="get-started-btn primary-btn">
+                            <span class="text">Get Started</span>
+                        </a>
+                    </div>
+                    <div class="action-otr">
+                        <a href="#" class="view-more border-btn">
+                            <span class="text">View More</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ===================================
+              Why Us Section End Here
+         =================================== -->
+
+    <!-- ===================================
+              Process Section Start Here
+         =================================== -->
+    <section class="process">
+        <div class="container">
+            <div class="process-inr">
+                <div class="wrapper mx-auto text-center">
+                    <h2 class="heading heading-h2 text-capitalize">Become a
+                        <span class="heading-inr">Crypto</span>
+                        trader in seconds
+                    </h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-img-otr">
+                        <div class="col-img-inr">
+                            <img src="./assets/img/process-img.png" alt="Image" class="img">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-content-otr">
+                        <div class="col-content-inr">
+                            <div class="steps-otr">
+                                <ul class="steps-ul">
+                                    <li class="step-li">
+                                        <div class="icon-otr">
+                                            <img src="./assets/img/book-3d-icon.png" alt="Icon" class="icon">
+                                        </div>
+                                        <div class="content-otr">
+                                            <h6 class="heading heading-h6-Medium">Learn Crypto</h6>
+                                            <p class="desc heading-S">Completely synergize resource taxing niche
+                                                markets. Professionally cultivate one-to-one customer service with
+                                                robust ideas. Dynamically.</p>
+                                        </div>
+                                    </li>
+                                    <li class="step-li">
+                                        <div class="icon-otr">
+                                            <img src="./assets/img/bitcoin-3d-coin.png" alt="Icon" class="icon">
+                                        </div>
+                                        <div class="content-otr">
+                                            <h6 class="heading heading-h6-Medium">Buy Crypto</h6>
+                                            <p class="desc heading-S">Completely synergize resource taxing niche
+                                                markets. Professionally cultivate one-to-one customer service with
+                                                robust ideas. Dynamically.</p>
+                                        </div>
+                                    </li>
+                                    <li class="step-li">
+                                        <div class="icon-otr">
+                                            <img src="./assets/img/analytic-ratio-3d-icon.png" alt="Icon" class="icon">
+                                        </div>
+                                        <div class="content-otr">
+                                            <h6 class="heading heading-h6-Medium">Trade Anywhere</h6>
+                                            <p class="desc heading-S">Completely synergize resource taxing niche
+                                                markets. Professionally cultivate one-to-one customer service with
+                                                robust ideas. Dynamically.</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ===================================
+              Process Section End Here
+         =================================== -->
+
+    <!-- ===================================
+            Testimonial Section Start Here
+         =================================== -->
+    <section class="testimonial">
+        <div class="container_fluid">
+            <div class="testimonial_inr">
+                <div class="row row_custom">
+                    <div class="col-lg-6 section_title">
+                        <h2 class="heading heading-h2">What our Client Say <span class="heading_inr">About</span> us
+                        </h2>
+                        <p class="desc heading-S">Lorem ipsum dolor sit amet consectetur adipiscing elit sed
+                            do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua ut dolor sit</p>
+                    </div>
+                    <div class="col-lg-6 section_content">
+                        <div class="user_otr">
+                            <div class="user_inr">
+                                <div class="profile_rating_otr">
+                                    <div class="profile_otr">
+                                        <div class="img_otr">
+                                            <img class="user_img" src="/assets/img/profile-1.png" alt="Profile">
+                                        </div>
+                                        <div class="content_otr">
+                                            <a href="#" class="heading heading-M">Michael Scott</a>
+                                            <p class="label heading-XS">@Trader</p>
+                                        </div>
+                                    </div>
+                                    <div class="rating_otr">
+                                        <ul class="rating_ul">
+                                            <li class="rating_li">
+                                                <i class="icon bi bi-star-fill"></i>
+                                            </li>
+                                            <li class="rating_li">
+                                                <i class="icon bi bi-star-fill"></i>
+                                            </li>
+                                            <li class="rating_li">
+                                                <i class="icon bi bi-star-fill"></i>
+                                            </li>
+                                            <li class="rating_li">
+                                                <i class="icon bi bi-star-fill"></i>
+                                            </li>
+                                            <li class="rating_li">
+                                                <i class="icon bi bi-star-fill"></i>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="content_otr">
+                                    <p class="desc heading-S">“Phosfluorescently engage worldwide
+                                        methodologies with
+                                        web-enabled technology. Interactively coordinate Collaboratively
+                                        administrate
+                                        turnkey channels whereasfully researched.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="user_otr">
+                            <div class="user_inr">
+                                <div class="profile_rating_otr">
+                                    <div class="profile_otr">
+                                        <div class="img_otr">
+                                            <img class="user_img" src="/assets/img/profile-2.png" alt="Profile">
+                                        </div>
+                                        <div class="content_otr">
+                                            <a href="#" class="heading heading-M">Sylvester Stallone</a>
+                                            <p class="label heading-XS">@Manager</p>
+                                        </div>
+                                    </div>
+                                    <div class="rating_otr">
+                                        <ul class="rating_ul">
+                                            <li class="rating_li">
+                                                <i class="icon bi bi-star-fill"></i>
+                                            </li>
+                                            <li class="rating_li">
+                                                <i class="icon bi bi-star-fill"></i>
+                                            </li>
+                                            <li class="rating_li">
+                                                <i class="icon bi bi-star-fill"></i>
+                                            </li>
+                                            <li class="rating_li">
+                                                <i class="icon bi bi-star-fill"></i>
+                                            </li>
+                                            <li class="rating_li">
+                                                <i class="icon bi bi-star-fill"></i>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="content_otr">
+                                    <p class="desc heading-S">“Phosfluorescently engage worldwide
+                                        methodologies with
+                                        web-enabled technology. Interactively coordinate Collaboratively
+                                        administrate
+                                        turnkey channels whereasfully researched.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="user_otr">
+                            <div class="user_inr">
+                                <div class="profile_rating_otr">
+                                    <div class="profile_otr">
+                                        <div class="img_otr">
+                                            <img class="user_img" src="/assets/img/profile-3.png" alt="Profile">
+                                        </div>
+                                        <div class="content_otr">
+                                            <a href="#" class="heading heading-M">Sohpie Moore</a>
+                                            <p class="label heading-XS">@Content Writer</p>
+                                        </div>
+                                    </div>
+                                    <div class="rating_otr">
+                                        <ul class="rating_ul">
+                                            <li class="rating_li">
+                                                <i class="icon bi bi-star-fill"></i>
+                                            </li>
+                                            <li class="rating_li">
+                                                <i class="icon bi bi-star-fill"></i>
+                                            </li>
+                                            <li class="rating_li">
+                                                <i class="icon bi bi-star-fill"></i>
+                                            </li>
+                                            <li class="rating_li">
+                                                <i class="icon bi bi-star-fill"></i>
+                                            </li>
+                                            <li class="rating_li">
+                                                <i class="icon bi bi-star-fill"></i>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="content_otr">
+                                    <p class="desc heading-S">“Phosfluorescently engage worldwide
+                                        methodologies with
+                                        web-enabled technology. Interactively coordinate Collaboratively
+                                        administrate
+                                        turnkey channels whereasfully researched.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="user_otr">
+                            <div class="user_inr">
+                                <div class="profile_rating_otr">
+                                    <div class="profile_otr">
+                                        <div class="img_otr">
+                                            <img class="user_img" src="/assets/img/profile-4.png" alt="Profile">
+                                        </div>
+                                        <div class="content_otr">
+                                            <a href="#" class="heading heading-M">Anna Marie</a>
+                                            <p class="label heading-XS">@Content Writer</p>
+                                        </div>
+                                    </div>
+                                    <div class="rating_otr">
+                                        <ul class="rating_ul">
+                                            <li class="rating_li">
+                                                <i class="icon bi bi-star-fill"></i>
+                                            </li>
+                                            <li class="rating_li">
+                                                <i class="icon bi bi-star-fill"></i>
+                                            </li>
+                                            <li class="rating_li">
+                                                <i class="icon bi bi-star-fill"></i>
+                                            </li>
+                                            <li class="rating_li">
+                                                <i class="icon bi bi-star-fill"></i>
+                                            </li>
+                                            <li class="rating_li">
+                                                <i class="icon bi bi-star-fill"></i>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="content_otr">
+                                    <p class="desc heading-S">“Phosfluorescently engage worldwide
+                                        methodologies with web-enabled technology. Interactively coordinate
+                                        Collaboratively administrate turnkey channels whereasfully researched.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="user_otr">
+                            <div class="user_inr">
+                                <div class="profile_rating_otr">
+                                    <div class="profile_otr">
+                                        <div class="img_otr">
+                                            <img class="user_img" src="/assets/img/profile-5.png" alt="Profile">
+                                        </div>
+                                        <div class="content_otr">
+                                            <a href="#" class="heading heading-M">Noah Brooks</a>
+                                            <p class="label heading-XS">@Trader</p>
+                                        </div>
+                                    </div>
+                                    <div class="rating_otr">
+                                        <ul class="rating_ul">
+                                            <li class="rating_li">
+                                                <i class="icon bi bi-star-fill"></i>
+                                            </li>
+                                            <li class="rating_li">
+                                                <i class="icon bi bi-star-fill"></i>
+                                            </li>
+                                            <li class="rating_li">
+                                                <i class="icon bi bi-star-fill"></i>
+                                            </li>
+                                            <li class="rating_li">
+                                                <i class="icon bi bi-star-fill"></i>
+                                            </li>
+                                            <li class="rating_li">
+                                                <i class="icon bi bi-star-fill"></i>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="content_otr">
+                                    <p class="desc heading-S">“Phosfluorescently engage worldwide
+                                        methodologies with
+                                        web-enabled technology. Interactively coordinate Collaboratively
+                                        administrate
+                                        turnkey channels whereasfully researched.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="user_otr">
+                            <div class="user_inr">
+                                <div class="profile_rating_otr">
+                                    <div class="profile_otr">
+                                        <div class="img_otr">
+                                            <img class="user_img" src="/assets/img/profile-6.png" alt="Profile">
+                                        </div>
+                                        <div class="content_otr">
+                                            <a href="#" class="heading heading-M">Ava Mitchell</a>
+                                            <p class="label heading-XS">@Manager</p>
+                                        </div>
+                                    </div>
+                                    <div class="rating_otr">
+                                        <ul class="rating_ul">
+                                            <li class="rating_li">
+                                                <i class="icon bi bi-star-fill"></i>
+                                            </li>
+                                            <li class="rating_li">
+                                                <i class="icon bi bi-star-fill"></i>
+                                            </li>
+                                            <li class="rating_li">
+                                                <i class="icon bi bi-star-fill"></i>
+                                            </li>
+                                            <li class="rating_li">
+                                                <i class="icon bi bi-star-fill"></i>
+                                            </li>
+                                            <li class="rating_li">
+                                                <i class="icon bi bi-star-fill"></i>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="content_otr">
+                                    <p class="desc heading-S">“Phosfluorescently engage worldwide
+                                        methodologies with
+                                        web-enabled technology. Interactively coordinate Collaboratively
+                                        administrate
+                                        turnkey channels whereasfully researched.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="user_otr">
+                            <div class="user_inr">
+                                <div class="profile_rating_otr">
+                                    <div class="profile_otr">
+                                        <div class="img_otr">
+                                            <img class="user_img" src="/assets/img/profile-7.png" alt="Profile">
+                                        </div>
+                                        <div class="content_otr">
+                                            <a href="#" class="heading heading-M">Amelia Grant</a>
+                                            <p class="label heading-XS">@Content Writer</p>
+                                        </div>
+                                    </div>
+                                    <div class="rating_otr">
+                                        <ul class="rating_ul">
+                                            <li class="rating_li">
+                                                <i class="icon bi bi-star-fill"></i>
+                                            </li>
+                                            <li class="rating_li">
+                                                <i class="icon bi bi-star-fill"></i>
+                                            </li>
+                                            <li class="rating_li">
+                                                <i class="icon bi bi-star-fill"></i>
+                                            </li>
+                                            <li class="rating_li">
+                                                <i class="icon bi bi-star-fill"></i>
+                                            </li>
+                                            <li class="rating_li">
+                                                <i class="icon bi bi-star-fill"></i>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="content_otr">
+                                    <p class="desc heading-S">“Phosfluorescently engage worldwide
+                                        methodologies with
+                                        web-enabled technology. Interactively coordinate Collaboratively
+                                        administrate
+                                        turnkey channels whereasfully researched.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="user_otr">
+                            <div class="user_inr">
+                                <div class="profile_rating_otr">
+                                    <div class="profile_otr">
+                                        <div class="img_otr">
+                                            <img class="user_img" src="/assets/img/profile-8.png" alt="Profile">
+                                        </div>
+                                        <div class="content_otr">
+                                            <a href="#" class="heading heading-M">Lily Parker</a>
+                                            <p class="label heading-XS">@Content Writer</p>
+                                        </div>
+                                    </div>
+                                    <div class="rating_otr">
+                                        <ul class="rating_ul">
+                                            <li class="rating_li">
+                                                <i class="icon bi bi-star-fill"></i>
+                                            </li>
+                                            <li class="rating_li">
+                                                <i class="icon bi bi-star-fill"></i>
+                                            </li>
+                                            <li class="rating_li">
+                                                <i class="icon bi bi-star-fill"></i>
+                                            </li>
+                                            <li class="rating_li">
+                                                <i class="icon bi bi-star-fill"></i>
+                                            </li>
+                                            <li class="rating_li">
+                                                <i class="icon bi bi-star-fill"></i>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="content_otr">
+                                    <p class="desc heading-S">“Phosfluorescently engage worldwide
+                                        methodologies with web-enabled technology. Interactively coordinate
+                                        Collaboratively administrate turnkey channels whereasfully researched.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ===================================
+            Testimonial Section End Here
+         =================================== -->
+
+    <!-- ===================================
+            Crypto App Section Start Here
+         =================================== -->
+    <section class="crypto_app">
+        <div class="container_fluid">
+            <div class="crypto_app_inr">
+                <div class="row row_custom">
+                    <div class="col-lg-6 col_content_otr">
+                        <div class="col_content_inr">
+                            <h2 class="heading heading-h2">Try the future, today. <br> Download
+                                <span class="heading_inr">Cryptop</span>
+                            </h2>
+                            <p class="desc heading-S">Lorem ipsum dolor sit amet consectetur adipiscing
+                                elit sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua ut dolor sit
+                            </p>
+                            <div class="download_app">
+                                <div class="scan_to_download">
+                                    <div class="qr_code_main">
+                                        <a href="#" class="qr_code_otr">
+                                            <img class="qr_code_img" src="./assets/img/qr-code.png" alt="Qr-Code">
+                                        </a>
+                                    </div>
+                                    <div class="content_otr">
+                                        <span class="desc heading-S">Scan To Download</span>
+                                        <p class="heading heading-M-IB">IOS & Android</p>
+                                    </div>
+                                </div>
+                                <div class="available_otr">
+                                    <ul class="available_ul">
+                                        <li class="available_li">
+                                            <a href="#" class="available_a">
+                                                <i class="icon ph-fill ph-apple-logo"></i>
+                                            </a>
+                                        </li>
+                                        <li class="available_li">
+                                            <a href="#" class="available_a">
+                                                <i class="icon ph-fill ph-android-logo"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col_img_otr">
+                        <div class="col_img_inr">
+                            <img class="img" src="/assets/img/mobile-img.png" alt="Image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ===================================
+             Crypto App Section End Here
+         =================================== -->
+
+    <!-- ===================================
+             Article Section Start Here
+         =================================== -->
+    <section class="articles">
+        <div class="container_fluid">
+            <div class="articles_inr">
+                <h2 class="heading heading-h2">Browse Our Latest <span class="heading_inr">Article</span></h2>
+                <div class="blogs_otr">
+                    <div class="swiper mySwiper1">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide blog_otr">
+                                <div class="blog_inr">
+                                    <a href="#" class="img_otr">
+                                        <img src="/assets/img/blog-1.png" alt="Image" class="img_blog" />
+                                    </a>
+                                    <div class="content_otr">
+                                        <div class="tags_otr">
+                                            <a href="#" class="profile_link heading-S">John Carter</a>
+                                            <p class="date heading-S">June 18, 2022</p>
+                                        </div>
+                                        <a href="#" class="heading heading-h6-Medium">To Crypto or Not to Crypto that is
+                                            the Question that leads to happy</a>
+                                        <p class="desc heading-S">
+                                            Organically grow the holistic world view of disruptive innovati workplace
+                                            diversity
+                                            empowerment.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide blog_otr">
+                                <div class="blog_inr">
+                                    <a href="#" class="img_otr">
+                                        <img src="/assets/img/blog-2.png" alt="Image" class="img_blog" />
+                                    </a>
+                                    <div class="content_otr">
+                                        <div class="tags_otr">
+                                            <a href="#" class="profile_link heading-S">Wanda Maximoff</a>
+                                            <p class="date heading-S">July 12, 2022</p>
+                                        </div>
+                                        <a href="#" class="heading heading-h6-Medium">How to trade crypto tokens from
+                                            your phone in 2022</a>
+                                        <p class="desc heading-S">
+                                            Organically grow the holistic world view of disruptive innovati workplace
+                                            diversity
+                                            empowerment.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide blog_otr">
+                                <div class="blog_inr">
+                                    <a href="#" class="img_otr">
+                                        <img src="/assets/img/blog-3.png" alt="Image" class="img_blog" />
+                                    </a>
+                                    <div class="content_otr">
+                                        <div class="tags_otr">
+                                            <a href="#" class="profile_link heading-S">Lucas Cooper</a>
+                                            <p class="date heading-S">July 25, 2022</p>
+                                        </div>
+                                        <a href="#" class="heading heading-h6-Medium">Digital Assets: The New Age of
+                                            Investment</a>
+                                        <p class="desc heading-S">
+                                            Dive into the world of digital assets and learn how to capitalize on
+                                            emerging opportunities.
+                                            Your guide to smart, secure, and profitable investments.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide blog_otr">
+                                <div class="blog_inr">
+                                    <a href="#" class="img_otr">
+                                        <img src="/assets/img/blog-4.png" alt="Image" class="img_blog" />
+                                    </a>
+                                    <div class="content_otr">
+                                        <div class="tags_otr">
+                                            <a href="#" class="profile_link heading-S">William Turner</a>
+                                            <p class="date heading-S">August 09, 2022</p>
+                                        </div>
+                                        <a href="#" class="heading heading-h6-Medium">Unlocking the Future of Finance:
+                                            Crypto's Potential</a>
+                                        <p class="desc heading-S">
+                                            Discover the transformative power of cryptocurrency and its impact on global
+                                            finance.
+                                            Explore the innovations driving the digital economy forward.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide blog_otr">
+                                <div class="blog_inr">
+                                    <a href="#" class="img_otr">
+                                        <img src="/assets/img/blog-5.png" alt="Image" class="img_blog" />
+                                    </a>
+                                    <div class="content_otr">
+                                        <div class="tags_otr">
+                                            <a href="#" class="profile_link heading-S">Ava Mitchell</a>
+                                            <p class="date heading-S">August 18, 2022</p>
+                                        </div>
+                                        <a href="#" class="heading heading-h6-Medium">Blockchain Revolution: Beyond
+                                            Cryptocurrency</a>
+                                        <p class="desc heading-S">
+                                            Explore the limitless applications of blockchain technology. From finance to
+                                            healthcare, see
+                                            how blockchain is revolutionizing industries across the globe.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide blog_otr">
+                                <div class="blog_inr">
+                                    <a href="#" class="img_otr">
+                                        <img src="/assets/img/blog-6.png" alt="Image" class="img_blog" />
+                                    </a>
+                                    <div class="content_otr">
+                                        <div class="tags_otr">
+                                            <a href="#" class="profile_link heading-S">James Harrison</a>
+                                            <p class="date heading-S">September 03, 2022</p>
+                                        </div>
+                                        <a href="#" class="heading heading-h6-Medium">Innovative Disruption: Shaping
+                                            Tomorrow's Economy</a>
+                                        <p class="desc heading-S">
+                                            Empowering businesses through cutting-edge technology. Understand how
+                                            disruptive innovations
+                                            are reshaping industries worldwide.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next swiper_button_next_1">
+                        <i class="icon bi bi-chevron-right"></i>
+                    </div>
+                    <div class="swiper-button-prev swiper_button_prev_1">
+                        <i class="icon bi bi-chevron-left"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================================
+             Article Section End Here
+         =================================== -->
+
+    <!-- ===================================
+            Newsletter Section Start Here
+         =================================== -->
+    <section class="newsletter">
+        <div class="container_fluid">
+            <div class="newsletter_inr">
+                <div class="wrapper">
+                    <h2 class="heading heading-h2">Trusted by
+                        <span class="heading_inr">10 Millions</span>+ Users. <br>
+                        Create your crypto portfolio on Cryptop trader
+                        <span class="icon_otr">
+                            <img class="icon" src="/assets/img/stopwatch-3d-icon.png" alt="Stopwatch">
+                        </span> in seconds
+                    </h2>
+                </div>
+                <form class="form_otr">
+                    <div class="input_main">
+                        <div class="input_otr">
+                            <input type="email" class="input_email heading-S" name="email" id="email"
+                                placeholder="Enter Your Email Id">
+                        </div>
+                        <div class="action_otr">
+                            <button class="submit_btn primary_btn">
+                                <span class="text">Sign Up</span>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="icons_otr">
+            <div class="icon_otr">
+                <img class="icon" src="/assets/img/card-icon.png" alt="Icon">
+            </div>
+            <div class="icon_otr">
+                <img class="icon" src="/assets/img/dollar-3d-coin.png" alt="Icon">
+            </div>
+            <div class="icon_otr">
+                <img class="icon" src="/assets/img/bitcoin-3d-coin.png" alt="Icon">
+            </div>
+            <div class="icon_otr">
+                <img class="icon" src="/assets/img/dollar-3d-icon.png" alt="Icon">
+            </div>
+        </div>
+    </section>
+    <!-- ===================================
+            Newsletter Section End Here
+         =================================== -->
+
     <!-- ===================================
                    Footer Start Here
          =================================== -->
@@ -172,17 +1319,20 @@
         <div class="container_fluid">
             <div class="footer_inr">
                 <div class="row logo_social_otr">
-                    <div class="col-lg-5 col-md-7 col_logo_otr">
+                    <div class="col-xl-6 col-lg-6 col-md-6 col_logo_otr">
                         <div class="logo_main">
                             <a href="#home" class="logo_otr">
-                                <img class="logo" src="./assets/img/logo.svg" alt="Logo">
+                                <img class="logo" src="/assets/img/logo.svg" alt="Logo" />
                             </a>
                         </div>
-                        <p class="desc heading-S">Completely synergize resource taxing niche markets. Professionally
-                            cultivate service with robust ideas. Dynamically.</p>
+                        <p class="desc heading-S">
+                            Completely synergize resource taxing niche markets. Professionally cultivate service with
+                            robust ideas.
+                            Dynamically.
+                        </p>
                     </div>
-                    <div class="col-lg-5 col-md-5 col_social_otr">
-                        <h4 class="heading-L heading">Follow Us:</h4>
+                    <div class="col-xl-5 col-lg-6 col-md-5 col_social_otr">
+                        <h4 class="heading heading-L">Follow Us:</h4>
                         <div class="social_otr">
                             <ul class="social_ul">
                                 <li class="social_li">
@@ -328,30 +1478,35 @@
                     <div class="col_contact_otr">
                         <div class="col_contact_inr">
                             <h4 class="heading heading-L">Registered Office Address</h4>
-                            <p class="address heading-S"><span class="text">Registered office address:</span>
+                            <p class="address heading-S">
+                                <span class="text">Registered office address:</span>
                                 <a href="#" class="address_link">Awlencan Innovations India Limited [CIN no. U104448],
-                                    Opposite Doordarshan T.V. Tower, Drive-In Road, Thaltej, NY 380054</a>
+                                    Opposite Doordarshan T.V. Tower, Drive-In
+                                    Road, Thaltej, NY 380054</a>
                             </p>
-                            <br>
-                            <p class="email_otr heading-S">In case of any query, please Mail
+                            <br />
+                            <p class="contact_otr heading-S">
+                                In case of any query, please Mail
                                 <a href="mailto:Trade@cryptop.com"
-                                    class="email_link heading-S-Medium">Trade@cryptop.com</a>
+                                    class="contact_link heading-S-Medium">Trade@cryptop.com</a>
                                 Or
-                                <a href="tel:(011) 65444 00025" class="phoneNo_link heading-S-Medium">(011) 65444
+                                <a href="tel:(011) 65444 00025" class="contact_link heading-S-Medium">(011) 65444
                                     00025</a>
                             </p>
                             <div class="disclaimer_otr">
                                 <p class="text heading-S-Medium">
                                     <span class="inr_text heading-S-SB">Disclaimer:</span>
                                     Trading in cryptocurrencies are subject to market, technical and legal risks.The
-                                    prices fluctuate based on local demand and supply
+                                    prices fluctuate
+                                    based on local demand and supply
                                 </p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="copyright_otr">
-                    <p class="copyright_text">Copyright © Cryptop | Designed by
+                    <p class="copyright_text heading-XS">
+                        Copyright © Cryptop | Designed by
                         <a href="#" class="link">Hammad Ali</a>
                         - Powered by Webflow
                     </p>
@@ -364,6 +1519,7 @@
          =================================== -->
     <script src="/assets/libs/bootstrap/dist/js/bootstrap.bundle.js"></script>
     <script src="/assets/libs/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
     <script src="/assets/js/app.js"></script>
 </body>
 

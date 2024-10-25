@@ -34,9 +34,17 @@ a {
     }
 }
 
+input,
+textarea {
+    &:focus {
+        outline: none;
+    }
+}
+
 img {
     max-width: 100%;
     height: auto;
+    display: inline-block;
 }
 
 /* **********************************
@@ -121,10 +129,15 @@ html {
     --bs-shade1-blue: #4681d9;
     --bs-shade2-blue: #35527e;
     --linear-gradient: linear-gradient(-60deg, var(--bs-tint4-seaBlue), var(--bs-tint1-purple) 55%, var(--bs-shade2-pink) 100%);
-    --radius: 89px;
-    --transitions: all 0.3s;
-    --transitionMed: all 0.7s;
     --pdBtn: 18px 46px;
+    --radius: 89px;
+    --transitions: all 0.3s linear;
+    --transitionMed: all 0.7s linear;
+
+    @media (max-width: 575.98px) {
+        --pdBtn: 14px 31px;
+        --radius: 45px;
+    }
 }
 
 /* **********************************
@@ -153,57 +166,46 @@ body {
 .heading-h1 {
     font: 80px / 129.5% "Ubuntu-Bold";
 
-    // @media (max-width: 1399px) {
-    //     font-size: 65px;
-    // }
+    @media (max-width: 1399px) {
+        font-size: 65px;
+    }
 
-    // @media (max-width: 991.98px) {
-    //     font-size: 50px;
-    // }
+    @media (max-width: 991.98px) {
+        font-size: 50px;
+    }
 
-    // @media (max-width: 767.98px) {
-    //     font-size: 40px;
-    // }
+    @media (max-width: 767.98px) {
+        font-size: 40px;
+    }
 
-    // @media (max-width: 575.98px) {
-    //     font-size: 30px;
-    // }
 }
 
 .heading-h1-Medium {
     font: 80px / 129.5% "Ubuntu-Medium";
 
-    // @media (max-width: 1399px) {
-    //     font-size: 65px;
-    // }
+    @media (max-width: 1399px) {
+        font-size: 65px;
+    }
 
-    // @media (max-width: 991.98px) {
-    //     font-size: 50px;
-    // }
+    @media (max-width: 991.98px) {
+        font-size: 50px;
+    }
 
-    // @media (max-width: 767.98px) {
-    //     font-size: 40px;
-    // }
-
-    // @media (max-width: 575.98px) {
-    //     font-size: 30px;
-    // }
+    @media (max-width: 767.98px) {
+        font-size: 40px;
+    }
 }
 
 .heading-h2 {
     font: 50px / 129.5% "Ubuntu-Bold";
 
-    // @media (max-width: 1399px) {
-    //     font-size: 40px;
-    // }
+    @media (max-width: 1299px) {
+        font-size: 40px;
+    }
 
-    // @media (max-width: 991.98px) {
-    //     font-size: 30px;
-    // }
-
-    // @media (max-width: 767.98px) {
-    //     font-size: 24px;
-    // }
+    @media (max-width: 767.98px) {
+        font-size: 32px;
+    }
 }
 
 .heading-h3 {
@@ -251,29 +253,32 @@ body {
 
 }
 
+//Done
 .heading-h6 {
     font: 30px / 129.5% "Ubuntu-Bold";
 
-    // @media (max-width: 991.98px) {
-    //     font-size: 24px;
-    // }
+    @media (max-width: 767.98px) {
+        font-size: 24px;
+    }
 
-    // @media (max-width: 767.98px) {
-    //     font-size: 16px;
-    // }
+    @media (max-width: 575.98px) {
+        font-size: 20px;
+    }
 }
 
 .heading-h6-Medium {
     font: 30px / 129.5% "Ubuntu-Medium";
 
-    // @media (max-width: 991.98px) {
-    //     font-size: 24px;
-    // }
+    @media (max-width: 767.98px) {
+        font-size: 24px;
+    }
 
-    // @media (max-width: 767.98px) {
-    //     font-size: 16px;
-    // }
+    @media (max-width: 575.98px) {
+        font-size: 20px;
+    }
 }
+
+//Done
 
 .heading-L {
     font: 25px / 129.5% "Ubuntu-Medium";
@@ -322,7 +327,7 @@ body {
 .heading-S {
     font: 18px / 160% "Inter-Regular";
 
-    @media (max-width: 991.98px) {
+    @media (max-width: 575.98px) {
         font-size: 16px;
     }
 }
@@ -330,7 +335,7 @@ body {
 .heading-S-Medium {
     font: 18px / 160% "Inter-Medium";
 
-    @media (max-width: 991.98px) {
+    @media (max-width: 575.98px) {
         font-size: 16px;
     }
 }
@@ -338,7 +343,7 @@ body {
 .heading-S-SB {
     font: 18px / 160% "Inter-SemiBold";
 
-    @media (max-width: 991.98px) {
+    @media (max-width: 575.98px) {
         font-size: 16px;
     }
 }
@@ -346,17 +351,31 @@ body {
 .heading-S-Bold {
     font: 18px / 160% "Inter-Bold";
 
-    @media (max-width: 991.98px) {
+    @media (max-width: 575.98px) {
         font-size: 16px;
     }
 }
 
 .heading-XS {
     font: 16px / 129.7% "Inter-Regular";
+
+    @media (max-width: 575.98px) {
+        font-size: 14px;
+    }
 }
 
 .heading-XS-Medium {
     font: 16px / 129.7% "Inter-Medium";
+
+    @media (max-width: 575.98px) {
+        font-size: 14px;
+    }
+}
+
+.heading_inr {
+    background: var(--linear-gradient);
+    background-clip: text;
+    color: transparent;
 }
 
 .primary_btn {
@@ -628,17 +647,28 @@ body {
     }
 }
 
-@media (max-width: 575.98px) {
-    .primary-btn {
-        padding: 14px 31px;
-        border-radius: 45px;
+@keyframes rotate-anime {
+    0% {
+        transform: rotate(0deg);
     }
 
-    .theme-btn {
-        padding: 14px 31px;
-        border-radius: 45px;
+    25% {
+        transform: rotate(10deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    75% {
+        transform: rotate(-10deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
     }
 }
+
 
 /* **********************************
    *********Animations End***********
