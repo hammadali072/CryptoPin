@@ -281,7 +281,7 @@ body {
     font-size: 18px;
   }
 }
-@media (max-width: 767.98px) {
+@media (max-width: 575.98px) {
   .heading-M {
     font-size: 16px;
   }
@@ -295,7 +295,7 @@ body {
     font-size: 18px;
   }
 }
-@media (max-width: 767.98px) {
+@media (max-width: 575.98px) {
   .heading-M-I-Medium {
     font-size: 16px;
   }
@@ -309,7 +309,7 @@ body {
     font-size: 18px;
   }
 }
-@media (max-width: 767.98px) {
+@media (max-width: 575.98px) {
   .heading-M-IB {
     font-size: 16px;
   }
@@ -415,6 +415,7 @@ body {
 .secondary_btn .text {
   font: 18px/160% "Inter-Medium";
   color: var(--bs-secondary-01);
+  transition: var(--transitions);
 }
 .secondary_btn::after {
   content: "";
@@ -430,7 +431,7 @@ body {
   background-color: var(--bs-navyBlue);
   transition: var(--transitionMed);
 }
-.secondary_btn:hover {
+.secondary_btn:hover .text {
   color: var(--bs-white);
 }
 .secondary_btn:hover::after {
@@ -452,6 +453,7 @@ body {
 .secondary_btn2 .text {
   font: 18px/160% "Inter-Medium";
   color: var(--bs-secondary-01);
+  transition: var(--transitions);
 }
 .secondary_btn2::after {
   content: "";
@@ -467,7 +469,7 @@ body {
   background-color: var(--bs-tint12-grey);
   transition: var(--transitionMed);
 }
-.secondary_btn2:hover {
+.secondary_btn2:hover .text {
   color: var(--bs-white);
 }
 .secondary_btn2:hover::after {
@@ -489,6 +491,7 @@ body {
 .border_btn .text {
   font: 18px/160% "Inter-Medium";
   color: var(--bs-secondary-01);
+  transition: var(--transitions);
 }
 .border_btn::after {
   content: "";
@@ -506,8 +509,10 @@ body {
   z-index: -1;
 }
 .border_btn:hover {
-  color: var(--bs-white);
   border: 1px solid var(--bs-secondary-01);
+}
+.border_btn:hover .text {
+  color: var(--bs-white);
 }
 .border_btn:hover::after {
   animation: borderBtn-animeInit 700ms forwards;
