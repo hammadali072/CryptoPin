@@ -1,3 +1,5 @@
+.header,
+.footer,
 .about_us,
 .process,
 .client_logos,
@@ -8,12 +10,248 @@
 .articles,
 .newsletter,
 .about-us,
+.achievement,
 .products {
   display: none;
 }
 
+.hero {
+  position: relative;
+}
+.hero .container_fluid .hero_inr {
+  position: relative;
+  z-index: 99;
+}
+.hero .container_fluid .hero_inr .wrapper {
+  padding-block: 145px;
+  text-align: center;
+  width: 1100px;
+  max-width: 100%;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 1199px) {
+  .hero .container_fluid .hero_inr .wrapper {
+    padding-block: 100px;
+  }
+}
+@media (max-width: 767.98px) {
+  .hero .container_fluid .hero_inr .wrapper {
+    padding-block: 70px;
+  }
+}
+.hero .container_fluid .hero_inr .wrapper .tag_otr {
+  background-color: #d3f4e4;
+  padding: 4px 19px;
+  border-radius: 30px;
+  display: inline-block;
+}
+.hero .container_fluid .hero_inr .wrapper .tag_otr .tag_text {
+  color: var(--bs-tint1-green);
+}
+@media (max-width: 991.98px) {
+  .hero .container_fluid .hero_inr .wrapper .tag_otr .tag_text {
+    font-size: 14px;
+  }
+}
+.hero .container_fluid .hero_inr .wrapper .heading {
+  color: var(--bs-secondary-01);
+  margin-top: 22px;
+}
+@media (min-width: 575.98px) {
+  .hero .container_fluid .hero_inr .wrapper .heading br {
+    display: none;
+  }
+}
+.hero .container_fluid .hero_inr .wrapper .heading .heading_inr {
+  position: relative;
+}
+.hero .container_fluid .hero_inr .wrapper .heading .heading_inr::before {
+  content: "Automatically";
+  position: absolute;
+  top: 0px;
+  left: 4px;
+  background: var(--linear-gradient);
+  background-clip: text;
+  color: transparent;
+  opacity: 0.4;
+  z-index: -1;
+}
+.hero .container_fluid .hero_inr .wrapper .desc {
+  color: var(--bs-secondary-02);
+  margin-block: 28px 40px;
+  width: 900px;
+  max-width: 100%;
+}
+.hero .container_fluid .hero_inr .wrapper .action_otr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero .container_fluid .hero_inr .wrapper .action_otr .text {
+  position: relative;
+  z-index: 1;
+}
+.hero .container_fluid .hero_inr .dashboard_img_otr {
+  position: relative;
+}
+.hero .container_fluid .hero_inr .dashboard_img_otr .img_inr {
+  display: flex;
+  justify-content: center;
+}
+.hero .container_fluid .hero_inr .dashboard_img_otr .img_inr .main_img {
+  filter: drop-shadow(0 22px 48px rgba(193, 193, 193, 0.2509803922));
+  width: 1100px;
+  max-width: 100%;
+}
+.hero .container_fluid .hero_inr .dashboard_img_otr .img_inr .img_otr .img_1 {
+  position: absolute;
+  top: -15%;
+  left: 0;
+  height: 525px;
+  object-fit: contain;
+  z-index: -1;
+  filter: drop-shadow(0 25px 20px rgba(159, 159, 159, 0.2509803922));
+}
+@media (max-width: 1199px) {
+  .hero .container_fluid .hero_inr .dashboard_img_otr .img_inr .img_otr .img_1 {
+    height: 425px;
+  }
+}
+@media (max-width: 767.98px) {
+  .hero .container_fluid .hero_inr .dashboard_img_otr .img_inr .img_otr .img_1 {
+    height: 300px;
+  }
+}
+@media (max-width: 575.98px) {
+  .hero .container_fluid .hero_inr .dashboard_img_otr .img_inr .img_otr .img_1 {
+    height: 200px;
+  }
+}
+.hero .container_fluid .hero_inr .dashboard_img_otr .img_inr .img_otr .img_2 {
+  position: absolute;
+  bottom: -15%;
+  right: 0%;
+  height: 480px;
+  object-fit: contain;
+}
+@media (max-width: 1199px) {
+  .hero .container_fluid .hero_inr .dashboard_img_otr .img_inr .img_otr .img_2 {
+    height: 380px;
+  }
+}
+@media (max-width: 767.98px) {
+  .hero .container_fluid .hero_inr .dashboard_img_otr .img_inr .img_otr .img_2 {
+    height: 320px;
+  }
+}
+@media (max-width: 575.98px) {
+  .hero .container_fluid .hero_inr .dashboard_img_otr .img_inr .img_otr .img_2 {
+    height: 220px;
+  }
+}
+@media (max-width: 420.98px) {
+  .hero .container_fluid .hero_inr .dashboard_img_otr .img_inr .img_otr .img_2 {
+    height: 160px;
+  }
+}
+.hero .images_otr .img_otr .img {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+}
+@media (max-width: 1199px) {
+  .hero .images_otr .img_otr .img {
+    width: 160px;
+    height: 160px;
+  }
+}
+@media (max-width: 767.98px) {
+  .hero .images_otr .img_otr .img {
+    width: 120px;
+    height: 120px;
+  }
+}
+@media (max-width: 575.98px) {
+  .hero .images_otr .img_otr .img {
+    display: none;
+  }
+}
+.hero .images_otr .img_otr .img_1 {
+  top: 0;
+  left: 3%;
+  transform: translateX(-3%);
+  animation: rotate-anime 5s infinite linear;
+}
+.hero .images_otr .img_otr .img_2 {
+  top: 0;
+  right: 3%;
+  transform: translateX(-3%);
+  animation: rotate-anime 5s infinite linear backwards;
+}
+.hero .images_otr .img_otr .img_3 {
+  width: 120px;
+  height: 120px;
+  top: 25%;
+  right: 25%;
+  transform: translate(-25%, -25%);
+  animation: circle-rotate 10s infinite linear;
+}
+.hero .images_otr .img_otr .img_4 {
+  top: 40%;
+  right: 3%;
+  transform: translate(-3%, -40%);
+  transition: var(--transitions);
+}
+@media (max-width: 767.98px) {
+  .hero .images_otr .img_otr .img_4 {
+    top: 50%;
+    transform: translate(-3%, -50%);
+  }
+}
+.hero .images_otr .img_otr .img_4:hover {
+  transform: translate(-3%, -40%) scale(1.1);
+}
+.hero .images_otr .img_otr .img_5 {
+  top: 40%;
+  left: 3%;
+  transform: translate(-3%, -40%);
+  transition: var(--transitions);
+}
+@media (max-width: 767.98px) {
+  .hero .images_otr .img_otr .img_5 {
+    top: 50%;
+    transform: translate(-3%, -50%);
+  }
+}
+.hero .images_otr .img_otr .img_5:hover {
+  transform: translate(-3%, calc(-40% - 10px));
+}
+
+/* **********************************
+   **Achievment Section Start Here***
+   ********************************** */
 .achievement {
   padding-block: 92px 180px;
+}
+@media (max-width: 1199px) {
+  .achievement {
+    padding-block: 92px 120px;
+  }
+}
+@media (max-width: 991.98px) {
+  .achievement {
+    padding-block: 92px;
+  }
+}
+@media (max-width: 767.98px) {
+  .achievement {
+    padding-block: 70px;
+  }
 }
 .achievement .container_fluid .achievement_inr > .row_custom {
   display: grid;
@@ -120,6 +358,9 @@
   color: var(--bs-white);
 }
 
+/* **********************************
+   ***Achievment Section End Here****
+   ********************************** */
 /* **********************************
    ***About Us Section Start Here****
    ********************************** */

@@ -447,7 +447,7 @@ body {
   overflow: hidden;
   padding: var(--pdBtn);
   border-radius: var(--radius);
-  background-color: var(--bs-white);
+  background-color: var(--bs-tint12-grey);
   transition: var(--transitionMed);
 }
 .secondary_btn2 .text {
@@ -466,7 +466,7 @@ body {
   transform: translate(5%, 5%);
   transform: scaleX(0);
   transform-origin: 0% 50%;
-  background-color: var(--bs-tint12-grey);
+  background-color: var(--bs-secondary-01);
   transition: var(--transitionMed);
 }
 .secondary_btn2:hover .text {
@@ -615,6 +615,25 @@ body {
   }
   100% {
     transform: rotate(0deg);
+  }
+}
+@keyframes circle-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes bounce-anime {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
   }
 }
 /* **********************************
