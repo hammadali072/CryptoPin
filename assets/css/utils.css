@@ -212,6 +212,21 @@ body {
 .heading-h3 {
   font: 45px/129.5% "Ubuntu-Bold";
 }
+@media (max-width: 1399px) {
+  .heading-h3 {
+    font-size: 35px;
+  }
+}
+@media (max-width: 991.98px) {
+  .heading-h3 {
+    font-size: 28px;
+  }
+}
+@media (max-width: 767.98px) {
+  .heading-h3 {
+    font-size: 24px;
+  }
+}
 
 .heading-h4 {
   font: 40px/129.5% "Ubuntu-Bold";
@@ -223,17 +238,27 @@ body {
 }
 @media (max-width: 767.98px) {
   .heading-h4 {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media (max-width: 575.98px) {
   .heading-h4 {
-    font-size: 18px;
+    font-size: 20px;
   }
 }
 
 .heading-h5 {
   font: 35px/129.5% "Ubuntu-Bold";
+}
+@media (max-width: 991.98px) {
+  .heading-h5 {
+    font-size: 28px;
+  }
+}
+@media (max-width: 767.98px) {
+  .heading-h5 {
+    font-size: 20px;
+  }
 }
 
 .heading-h6 {
@@ -387,6 +412,11 @@ body {
   font: 18px/160% "Inter-Medium";
   color: var(--bs-white);
 }
+@media (max-width: 575.98px) {
+  .primary_btn .text {
+    font-size: 16px;
+  }
+}
 .primary_btn::after {
   content: "";
   position: absolute;
@@ -415,7 +445,13 @@ body {
 .secondary_btn .text {
   font: 18px/160% "Inter-Medium";
   color: var(--bs-secondary-01);
+  text-align: center;
   transition: var(--transitions);
+}
+@media (max-width: 575.98px) {
+  .secondary_btn .text {
+    font-size: 16px;
+  }
 }
 .secondary_btn::after {
   content: "";
@@ -453,7 +489,13 @@ body {
 .secondary_btn2 .text {
   font: 18px/160% "Inter-Medium";
   color: var(--bs-secondary-01);
+  text-align: center;
   transition: var(--transitions);
+}
+@media (max-width: 575.98px) {
+  .secondary_btn2 .text {
+    font-size: 16px;
+  }
 }
 .secondary_btn2::after {
   content: "";
@@ -491,7 +533,13 @@ body {
 .border_btn .text {
   font: 18px/160% "Inter-Medium";
   color: var(--bs-secondary-01);
+  text-align: center;
   transition: var(--transitions);
+}
+@media (max-width: 575.98px) {
+  .border_btn .text {
+    font-size: 16px;
+  }
 }
 .border_btn::after {
   content: "";

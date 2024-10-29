@@ -16,23 +16,6 @@
     animation: $anime-name $duration infinite linear;
 }
 
-.header,
-.footer,
-.about_us,
-.process,
-.client_logos,
-.testimonial,
-.whyUs,
-.crypto_app,
-.grow_crypto,
-.articles,
-.newsletter,
-.about-us,
-.achievement,
-.products {
-    display: none;
-}
-
 .hero {
     position: relative;
 
@@ -311,7 +294,7 @@
                 .col_counters_otr {
                     grid-column: span 2;
 
-                    @media (min-width: 1199px) {
+                    @media (min-width: 1399px) {
                         padding-right: 100px;
                     }
 
@@ -324,7 +307,7 @@
                             justify-content: space-between;
                             position: relative;
 
-                            @media (max-width: 575.98px) {
+                            @media (max-width: 320px) {
                                 grid-template-columns: 1fr;
                             }
 
@@ -333,19 +316,28 @@
                                 align-items: center;
                                 gap: 0 27px;
 
-                                @media (max-width: 991.98px) {
+                                @media (max-width: 1199px) {
                                     gap: 0 18px;
                                 }
 
+                                @media (max-width: 575.98px) {
+                                    flex-direction: column;
+                                    align-items: flex-start;
+                                }
+
                                 &:nth-child(even) {
-                                    @media (min-width: 575.98px) {
-                                        padding-left: 70px;
+                                    @media (max-width: 1399px) and (min-width: 575.98px) {
+                                        padding-left: 50px;
                                     }
+
                                 }
 
                                 &:nth-child(odd) {
+                                    @media (max-width: 1399px) and (min-width: 575.98px) {
+                                        padding-right: 50px;
+                                    }
+
                                     @media (min-width: 575.98px) {
-                                        padding-right: 70px;
                                         border-right: 1px solid var(--bs-tint6-grey);
                                     }
 
@@ -403,12 +395,22 @@
                         border-radius: 30px;
                         background-color: var(--bs-secondary-01);
                         display: flex;
-                        gap: 0 20px;
+                        gap: 20px;
                         align-items: center;
 
-                        width: max-content;
+                        @media (min-width: 991.98px) {
+                            width: max-content;
+                        }
 
-                        @media (max-width: 991.98px) {}
+                        @media (max-width: 575px) {
+                            padding: 20px;
+                        }
+
+                        @media (max-width: 420px) {
+                            flex-direction: column;
+                            justify-content: center;
+                            text-align: center;
+                        }
 
                         .icon_otr {
                             background-color: #333539;
@@ -416,8 +418,6 @@
                             padding: 11px;
 
                             .rate_badge {
-                                width: 132px;
-                                height: auto;
                                 object-fit: contain;
                             }
                         }
@@ -712,18 +712,18 @@
    **Grow Crypto Section Start Here**
    ********************************** */
 .grow_crypto {
-    padding-top: 144px;
+    padding-block: 144px 204px;
 
     @media (max-width: 1199px) {
-        padding-block: 100px;
+        padding-block: 100px 150px;
     }
 
     @media (max-width: 991.98px) {
-        padding-block: 80px;
+        padding-block: 80px 120px;
     }
 
     @media (max-width: 767.98px) {
-        padding-block: 50px;
+        padding-block: 50px 90px;
     }
 
     .container_fluid {
@@ -862,6 +862,335 @@
 
 /* **********************************
    ***Grow Crypto Section End Here***
+   ********************************** */
+
+/* **********************************
+   ***Products Section Start Here****
+   ********************************** */
+.products {
+    .container_fluid {
+        .products_inr {
+            .wrapper {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 12px;
+
+                @media (max-width: 991.98px) {
+                    align-items: flex-start;
+                    flex-direction: column;
+                }
+
+                .desc {
+                    color: var(--bs-secondary-02);
+                    text-transform: capitalize;
+                    width: 700px;
+                    max-width: 100%;
+
+                    .desc_inr {
+                        &:first-child {
+                            color: var(--bs-secondary-01);
+                        }
+
+                        &:nth-child(2) {
+                            color: var(--bs-shade1-brown);
+                        }
+                    }
+                }
+            }
+
+            .your_money_otr {
+                .your_money_inr {
+                    margin-top: 60px;
+                    position: relative;
+                    padding: 128px 90px;
+
+                    @media (max-width: 1199px) {
+                        padding: 90px 70px;
+                    }
+
+                    @media (max-width: 991.98px) {
+                        margin-top: 48px;
+                        padding: 70px 50px;
+                    }
+
+                    @media (max-width: 575.98px) {
+                        padding: 60px 20px;
+                    }
+
+                    >.row_custom {
+                        gap: 24px 0;
+                        align-items: center;
+
+                        .section_title {
+                            .heading {
+                                color: var(--bs-secondary-01);
+                            }
+
+                            .desc {
+                                text-transform: capitalize;
+                                color: var(--bs-white);
+                                margin-top: 14px;
+                            }
+                        }
+
+                        .nav_tab_otr {
+
+                            .nav-tabs {
+                                border-bottom: 0px;
+                                gap: 12px 20px;
+                                align-items: center;
+
+                                @media (min-width: 1200px) {
+                                    justify-content: flex-end;
+                                }
+
+                                @media (max-width: 575.98px) {
+                                    flex-direction: column;
+                                }
+
+                                .nav-item {
+
+                                    @media (max-width: 575.98px) {
+                                        width: 100%;
+                                    }
+
+                                    .nav-link {
+                                        @media (max-width: 575.98px) {
+                                            width: 100%;
+                                            justify-content: center;
+                                        }
+
+                                        display: flex;
+                                        align-items: end;
+                                        gap: 0 8px;
+                                        border-radius: 0;
+                                        border: 0px;
+                                        padding: 15px 20px;
+                                        border-radius: var(--radius);
+                                        background-color: #ffffff80;
+
+                                        @media (max-width: 767.98px) {
+                                            padding: 12px 20px;
+                                        }
+
+                                        .icon_otr {
+                                            .icon {}
+                                        }
+
+                                        .text {
+                                            color: var(--bs-navyBlue);
+                                        }
+
+                                        &:hover {
+                                            border: none;
+                                        }
+                                    }
+
+                                    .active {
+                                        background-color: var(--bs-white);
+                                    }
+                                }
+                            }
+
+                        }
+                    }
+
+                    .tab_content_otr {
+
+                        .tab_content_inr {
+                            margin-top: 70px;
+
+                            @media (max-width: 991.98px) {
+                                margin-top: 48px;
+                            }
+
+                            .tab-pane {
+                                .money_tab_content_otr {
+                                    .money_tab_content_inr {
+                                        background-color: var(--bs-white);
+                                        border-radius: 50px;
+                                        border: 1px solid var(--bs-tint6-grey);
+                                        box-shadow: 0 22px 48px #11111140;
+
+                                        @media (max-width: 575.98px) {
+                                            border-radius: 30px;
+                                        }
+
+                                        .top_icon_otr {
+                                            padding: 30px 45px;
+                                            display: flex;
+                                            gap: 0 8px;
+                                            justify-content: flex-end;
+                                            border-bottom: 1px solid var(--bs-tint6-grey);
+
+                                            @media (max-width: 575.98px) {
+                                                padding: 18px 24px;
+                                            }
+
+                                            .browser_icon {
+                                                width: 22px;
+                                                height: 22px;
+                                                border-radius: 100%;
+
+                                                @media (max-width: 575.98px) {
+                                                    width: 16px;
+                                                    height: 16px;
+                                                }
+
+                                                &:first-child {
+                                                    background-color: var(--bs-tint2-green);
+                                                }
+
+                                                &:nth-child(2) {
+                                                    background-color: var(--bs-tint1-brown);
+                                                }
+
+                                                &:last-child {
+                                                    background-color: #ff6868;
+                                                }
+                                            }
+                                        }
+
+                                        .row_custom {
+                                            padding: 40px 65px 95px;
+                                            gap: 48px 0;
+                                            align-items: center;
+
+                                            @media (max-width: 1199px) {
+                                                padding: 40px 45px 65px;
+                                            }
+
+                                            @media (max-width: 991.98px) {
+                                                padding: 40px 45px;
+                                            }
+
+                                            @media (max-width: 575.98px) {
+                                                padding: 25px;
+                                            }
+
+                                            .col_img_otr {
+                                                .col_img_inr {
+                                                    display: flex;
+                                                    justify-content: center;
+                                                    align-items: center;
+                                                }
+                                            }
+
+                                            .col_content_otr {
+                                                .col_content_inr {
+                                                    @media (min-width: 1199px) {
+                                                        padding-left: 48px;
+                                                    }
+
+                                                    .tag_otr {
+                                                        display: inline-block;
+                                                        padding: 4px 20px;
+                                                        border-radius: 30px;
+                                                        background-color: #ffe8cc;
+
+                                                        .tag_text {
+                                                            color: #c0955e;
+
+                                                            @media (max-width: 767.98px) {
+                                                                font-size: 14px;
+                                                            }
+                                                        }
+                                                    }
+
+                                                    .heading_title {
+                                                        display: flex;
+                                                        align-items: baseline;
+                                                        gap: 0 4px;
+
+                                                        @media (max-width: 991.98px) {
+                                                            margin-block: 12px;
+                                                        }
+
+                                                        .heading {
+                                                            color: var(--bs-secondary-01);
+                                                        }
+
+                                                        .rate {
+                                                            font-size: 22px;
+                                                            color: var(--bs-tint1-indigo);
+
+                                                            @media (max-width: 1199px) {
+                                                                font-size: 20px;
+                                                            }
+
+                                                            @media (max-width: 991.98px) {
+                                                                font-size: 18px;
+                                                            }
+
+                                                            @media (max-width: 575.98px) {
+                                                                font-size: 16px;
+                                                            }
+                                                        }
+                                                    }
+
+                                                    .desc {
+                                                        color: var(--bs-secondary-02);
+                                                        text-transform: capitalize;
+                                                    }
+
+                                                    .action_otr {
+                                                        display: inline-block;
+                                                        margin-top: 50px;
+
+                                                        @media (max-width: 1199px) {
+                                                            margin-top: 24px;
+                                                        }
+
+                                                        .text {
+                                                            position: relative;
+                                                            z-index: 1;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    &::before {
+                        content: "";
+                        width: 100%;
+                        height: 940px;
+                        background: linear-gradient(to right, #62d6ed, #FFB2D1, #FFD7A5);
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        z-index: -1;
+                        border-radius: 24px;
+
+                        @media (max-width: 991.98px) {
+                            height: 100%;
+                        }
+                    }
+
+                    &::after {
+                        content: "";
+                        width: 800px;
+                        height: 800px;
+                        background: url(/assets/img/rings-svg.svg) no-repeat center;
+                        background-size: contain;
+                        position: absolute;
+                        right: 0;
+                        bottom: 100px;
+                        z-index: -1;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* **********************************
+   *****Prodcuts Section End Here****
    ********************************** */
 
 /* **********************************
