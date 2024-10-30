@@ -33,14 +33,14 @@
                 }
 
                 .close_icon_otr {
-                    border-radius: 100%;
-                    background-color: var(--bs-tint12-grey);
-                    width: 40px;
-                    height: 40px;
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    transition: all 0.3s;
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 100%;
+                    background-color: var(--bs-tint12-grey);
+                    transition: var(--transitions);
                     cursor: pointer;
 
                     .icon {
@@ -189,6 +189,7 @@
 /* **********************************
    *******Overlay Section End********
    ********************************** */
+
 /* **********************************
    ***********Header Start***********
    ********************************** */
@@ -206,7 +207,6 @@
 }
 
 .header {
-
 
     .container_fluid {
 
@@ -314,6 +314,7 @@
                                 transition: var(--transitions);
 
                                 .icon {
+                                    display: flex;
                                     color: var(--bs-navyBlue);
                                     font-size: 12px;
                                     transition: var(--transitions);
@@ -334,12 +335,12 @@
                                 top: 20px;
                                 left: 0;
                                 width: 200px;
-                                visibility: hidden;
-                                opacity: 0;
                                 padding-top: 10px;
                                 transform: rotateX(30deg) translateY(20px);
                                 perspective-origin: bottom;
                                 transition: var(--transitions);
+                                visibility: hidden;
+                                opacity: 0;
                                 z-index: 9999;
 
                                 .dropdown_inr {
@@ -379,6 +380,12 @@
                                 }
                             }
                         }
+                    }
+                }
+
+                .action_otr {
+                    .login_btn {
+                        padding: var(--pdBtn);
                     }
                 }
             }

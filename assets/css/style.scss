@@ -1,21 +1,6 @@
-@mixin custom-rotate-anime($anime-name, $s-v, $e-v, $duration) {
-    @keyframes #{$anime-name} {
-        0% {
-            transform: rotateZ($s-v);
-        }
-
-        50% {
-            transform: rotateZ($e-v);
-        }
-
-        100% {
-            animation: rotateZ($s-v);
-        }
-    }
-
-    animation: $anime-name $duration infinite linear;
-}
-
+/* **********************************
+   *****Hero Section Start Here******
+   ********************************** */
 .hero {
     position: relative;
 
@@ -25,15 +10,15 @@
             z-index: 99;
 
             .wrapper {
-                padding-block: 145px;
-                text-align: center;
                 width: 1100px;
                 max-width: 100%;
-                margin-inline: auto;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+                text-align: center;
+                margin-inline: auto;
+                padding-block: 145px;
 
                 @media (max-width: 1199px) {
                     padding-block: 100px;
@@ -44,11 +29,10 @@
                 }
 
                 .tag_otr {
-                    background-color: #d3f4e4;
-                    padding: 4px 19px;
-                    border-radius: 30px;
                     display: inline-block;
-
+                    background-color: #d3f4e4;
+                    border-radius: 30px;
+                    padding: 4px 19px;
 
                     .tag_text {
                         color: var(--bs-tint1-green);
@@ -60,9 +44,8 @@
                 }
 
                 .heading {
-                    color: var(--bs-secondary-01);
                     margin-top: 22px;
-
+                    color: var(--bs-secondary-01);
 
                     @media (min-width: 575.98px) {
                         br {
@@ -72,7 +55,6 @@
 
                     .heading_inr {
                         position: relative;
-
 
                         &::before {
                             content: "Automatically";
@@ -89,21 +71,20 @@
                 }
 
                 .desc {
-                    color: var(--bs-secondary-02);
-                    margin-block: 28px 40px;
                     width: 900px;
                     max-width: 100%;
+                    margin-block: 28px 40px;
+                    color: var(--bs-secondary-02);
+
+                    @media (max-width: 575.98px) {
+                        margin-block: 20px;
+                    }
                 }
 
                 .action_otr {
                     display: flex;
                     justify-content: center;
                     align-items: center;
-
-                    .text {
-                        position: relative;
-                        z-index: 1;
-                    }
                 }
             }
 
@@ -116,9 +97,9 @@
                     justify-content: center;
 
                     .main_img {
-                        filter: drop-shadow(0 22px 48px #c1c1c140);
                         width: 1100px;
                         max-width: 100%;
+                        filter: drop-shadow(0 22px 48px #c1c1c140);
                     }
 
                     .img_otr {
@@ -142,6 +123,10 @@
 
                             @media (max-width: 575.98px) {
                                 height: 200px;
+                            }
+
+                            @media (max-width: 420px) {
+                                display: none;
                             }
                         }
 
@@ -167,13 +152,11 @@
                             @media (max-width: 420.98px) {
                                 height: 160px;
                             }
-
                         }
                     }
                 }
             }
         }
-
     }
 
     .images_otr {
@@ -262,21 +245,25 @@
 }
 
 /* **********************************
+   *******Hero Section End Here******
+   ********************************** */
+
+/* **********************************
    **Achievment Section Start Here***
    ********************************** */
 .achievement {
-    padding-block: 92px 180px;
+    padding-block: 180px 180px;
 
     @media (max-width: 1199px) {
-        padding-block: 92px 120px;
+        padding-block: 180px 120px;
     }
 
     @media (max-width: 991.98px) {
-        padding-block: 92px;
+        padding-block: 120px 92px;
     }
 
     @media (max-width: 767.98px) {
-        padding-block: 70px;
+        padding-block: 90px;
     }
 
     .container_fluid {
@@ -287,7 +274,7 @@
                 align-items: center;
                 gap: 48px;
 
-                @media (max-width: 991.98px) {
+                @media (max-width: 1140px) {
                     grid-template-columns: 1fr;
                 }
 
@@ -303,8 +290,8 @@
                         .row_counter {
                             display: grid;
                             grid-template-columns: repeat(2, 1fr);
-                            gap: 50px 0;
                             justify-content: space-between;
+                            gap: 50px 0;
                             position: relative;
 
                             @media (max-width: 320px) {
@@ -314,30 +301,28 @@
                             .counter_item_otr {
                                 display: flex;
                                 align-items: center;
-                                gap: 0 27px;
+                                gap: 27px;
 
                                 @media (max-width: 1199px) {
-                                    gap: 0 18px;
+                                    gap: 18px;
                                 }
 
                                 @media (max-width: 575.98px) {
                                     flex-direction: column;
                                     align-items: flex-start;
+                                    gap: 10px;
                                 }
 
                                 &:nth-child(even) {
-                                    @media (max-width: 1399px) and (min-width: 575.98px) {
+                                    @media (min-width: 575.98px) {
                                         padding-left: 50px;
                                     }
 
                                 }
 
                                 &:nth-child(odd) {
-                                    @media (max-width: 1399px) and (min-width: 575.98px) {
-                                        padding-right: 50px;
-                                    }
-
                                     @media (min-width: 575.98px) {
+                                        padding-right: 50px;
                                         border-right: 1px solid var(--bs-tint6-grey);
                                     }
 
@@ -345,7 +330,7 @@
 
                                 &:first-child {
                                     .heading {
-                                        .heading-inr {
+                                        .heading_text {
                                             color: #ff82be;
                                         }
                                     }
@@ -353,7 +338,7 @@
 
                                 &:nth-child(2) {
                                     .heading {
-                                        .heading-inr {
+                                        .heading_text {
                                             color: var(--bs-tint2-blue);
                                         }
                                     }
@@ -361,7 +346,7 @@
 
                                 &:nth-child(3) {
                                     .heading {
-                                        .heading-inr {
+                                        .heading_text {
                                             color: var(--bs-primary-02);
                                         }
                                     }
@@ -369,7 +354,7 @@
 
                                 &:last-child {
                                     .heading {
-                                        .heading-inr {
+                                        .heading_text {
                                             color: var(--bs-shade1-brown);
                                         }
                                     }
@@ -381,7 +366,10 @@
 
                                 .desc {
                                     color: var(--bs-secondary-02);
-                                    text-transform: capitalize;
+
+                                    @media (max-width: 420px) {
+                                        font-size: 14px;
+                                    }
                                 }
                             }
                         }
@@ -398,7 +386,7 @@
                         gap: 20px;
                         align-items: center;
 
-                        @media (min-width: 991.98px) {
+                        @media (min-width: 1140px) {
                             width: max-content;
                         }
 
@@ -489,13 +477,11 @@
 
                         .heading {
                             color: var(--bs-secondary-01);
-                            text-transform: capitalize;
                         }
 
                         .desc {
                             color: var(--bs-secondary-02);
                             margin-block: 27px 40px;
-                            text-transform: capitalize;
 
                             @media (max-width: 575.98px) {
                                 margin-block: 18px;
@@ -554,15 +540,6 @@
                         .action_otr {
                             display: flex;
                             justify-content: flex-start;
-
-                            .get_started_btn {
-                                &:hover {
-                                    .text {
-                                        position: relative;
-                                        z-index: 1;
-                                    }
-                                }
-                            }
                         }
                     }
                 }
@@ -594,13 +571,13 @@
 
                         &::after {
                             content: "";
+                            position: absolute;
+                            top: 0;
+                            right: 0;
                             width: 100%;
                             height: 85%;
                             background: linear-gradient(-60deg, #a1fbff -210%, #ccd0ff, #ffcce0 100%), url(../img/rings-svg.svg) no-repeat center;
                             background-blend-mode: color-burn;
-                            position: absolute;
-                            top: 0;
-                            right: 0;
                             border-radius: 50px;
 
                             @media (max-width: 575.98px) {
@@ -661,13 +638,13 @@
                     gap: 24px 60px;
 
                     @media (max-width: 991.98px) {
-                        gap: 24px 48px;
                         grid-template-columns: repeat(3, 1fr);
+                        gap: 24px 48px;
                     }
 
                     @media (max-width: 575.98px) {
-                        gap: 12px;
                         grid-template-columns: repeat(2, 1fr);
+                        gap: 12px;
                     }
 
                     @media (max-width: 320px) {
@@ -737,7 +714,6 @@
 
                 .heading {
                     color: var(--bs-secondary-01);
-                    text-transform: capitalize;
                 }
             }
 
@@ -807,13 +783,11 @@
 
                             .heading {
                                 color: var(--bs-secondary-01);
-                                text-transform: capitalize;
                             }
 
                             .desc {
                                 margin-block: 18px;
                                 color: var(--bs-secondary-02);
-                                text-transform: capitalize;
 
                                 @media (max-width: 767.98px) {
                                     margin-block: 14px;
@@ -877,13 +851,12 @@
                 gap: 12px;
 
                 @media (max-width: 991.98px) {
-                    align-items: flex-start;
                     flex-direction: column;
+                    align-items: flex-start;
                 }
 
                 .desc {
                     color: var(--bs-secondary-02);
-                    text-transform: capitalize;
                     width: 700px;
                     max-width: 100%;
 
@@ -928,7 +901,6 @@
                             }
 
                             .desc {
-                                text-transform: capitalize;
                                 color: var(--bs-white);
                                 margin-top: 14px;
                             }
@@ -956,11 +928,6 @@
                                     }
 
                                     .nav-link {
-                                        @media (max-width: 575.98px) {
-                                            width: 100%;
-                                            justify-content: center;
-                                        }
-
                                         display: flex;
                                         align-items: end;
                                         gap: 0 8px;
@@ -972,6 +939,11 @@
 
                                         @media (max-width: 767.98px) {
                                             padding: 12px 20px;
+                                        }
+
+                                        @media (max-width: 575.98px) {
+                                            width: 100%;
+                                            justify-content: center;
                                         }
 
                                         .icon_otr {
@@ -992,7 +964,6 @@
                                     }
                                 }
                             }
-
                         }
                     }
 
@@ -1020,8 +991,8 @@
                                         .top_icon_otr {
                                             padding: 30px 45px;
                                             display: flex;
-                                            gap: 0 8px;
                                             justify-content: flex-end;
+                                            gap: 0 8px;
                                             border-bottom: 1px solid var(--bs-tint6-grey);
 
                                             @media (max-width: 575.98px) {
@@ -1054,8 +1025,8 @@
 
                                         .row_custom {
                                             padding: 40px 65px 95px;
-                                            gap: 48px 0;
                                             align-items: center;
+                                            gap: 48px 0;
 
                                             @media (max-width: 1199px) {
                                                 padding: 40px 45px 65px;
@@ -1131,7 +1102,6 @@
 
                                                     .desc {
                                                         color: var(--bs-secondary-02);
-                                                        text-transform: capitalize;
                                                     }
 
                                                     .action_otr {
@@ -1158,12 +1128,12 @@
 
                     &::before {
                         content: "";
-                        width: 100%;
-                        height: 940px;
-                        background: linear-gradient(to right, #62d6ed, #FFB2D1, #FFD7A5);
                         position: absolute;
                         top: 0;
                         left: 0;
+                        width: 100%;
+                        height: 940px;
+                        background: linear-gradient(to right, #62d6ed, #FFB2D1, #FFD7A5);
                         z-index: -1;
                         border-radius: 24px;
 
@@ -1174,13 +1144,13 @@
 
                     &::after {
                         content: "";
+                        position: absolute;
+                        right: 0;
+                        bottom: 100px;
                         width: 800px;
                         height: 800px;
                         background: url(/assets/img/rings-svg.svg) no-repeat center;
                         background-size: contain;
-                        position: absolute;
-                        right: 0;
-                        bottom: 100px;
                         z-index: -1;
                     }
                 }
@@ -1223,7 +1193,6 @@
 
                 .heading {
                     color: var(--bs-secondary-01);
-                    text-transform: capitalize;
                 }
             }
 
@@ -1290,13 +1259,13 @@
                     }
 
                     .col_card_inr {
+                        position: relative;
                         background-color: var(--bs-tint12-grey);
                         border: 1px solid transparent;
                         border-radius: 20px;
                         padding: 65px 45px;
-                        position: relative;
-                        z-index: 100;
                         overflow: hidden;
+                        z-index: 100;
                         transition: var(--transitions);
 
                         @media (max-width: 991.98px) {
@@ -1331,7 +1300,6 @@
 
                             .heading {
                                 color: var(--bs-secondary-01);
-                                text-transform: capitalize;
                                 transition: var(--transitions);
 
                                 &:hover {
@@ -1342,7 +1310,6 @@
                             .desc {
                                 margin-top: 14px;
                                 color: var(--bs-secondary-02);
-                                text-transform: capitalize;
                             }
                         }
 
@@ -1383,17 +1350,17 @@
 
             .action_main {
                 display: flex;
-                gap: 0 30px;
                 align-items: center;
+                gap: 0 30px;
 
                 @media (max-width: 991.98px) {
-                    gap: 0 12px;
                     justify-content: center;
+                    gap: 0 12px;
                 }
 
                 @media (max-width: 320px) {
-                    gap: 12px;
                     flex-direction: column;
+                    gap: 12px;
                 }
 
                 .action_otr {
@@ -1444,7 +1411,6 @@
 
                 .heading {
                     color: var(--bs-secondary-01);
-                    text-transform: capitalize;
                 }
             }
 
@@ -1469,8 +1435,8 @@
                         .steps_otr {
                             .steps_ul {
                                 display: flex;
-                                gap: 40px 0;
                                 flex-direction: column;
+                                gap: 40px 0;
 
                                 @media (max-width: 767.98px) {
                                     grid-gap: 20px 0;
@@ -1522,7 +1488,6 @@
                                         .desc {
                                             margin-top: 17px;
                                             color: var(--bs-secondary-02);
-                                            text-transform: capitalize;
 
                                             @media (max-width: 575.98px) {
                                                 margin-top: 12px;
@@ -1540,9 +1505,9 @@
                         position: relative;
 
                         .img {
-                            object-fit: contain;
                             position: relative;
                             padding: 70px 30px 0 0;
+                            object-fit: contain;
                             z-index: 1;
 
                             @media (max-width: 991.98px) {
@@ -1568,6 +1533,10 @@
                             @media (max-width: 991.98px) {
                                 width: 100%;
                                 height: 100%;
+                            }
+
+                            @media (max-width: 575.98px) {
+                                border-radius: 30px;
                             }
                         }
                     }
@@ -1619,13 +1588,11 @@
 
                     .heading {
                         color: var(--bs-secondary-01);
-                        text-transform: capitalize;
                     }
 
                     .desc {
                         margin-top: 18px;
                         color: var(--bs-secondary-02);
-                        text-transform: capitalize;
                     }
                 }
 
@@ -1654,7 +1621,6 @@
                                         }
                                     }
                                 }
-
                             }
                         }
 
@@ -1695,9 +1661,9 @@
 
                             .profile_rating_otr {
                                 display: flex;
-                                gap: 12px 0;
                                 justify-content: space-between;
                                 align-items: center;
+                                gap: 12px 0;
 
                                 @media (max-width: 575.98px) {
                                     flex-direction: column;
@@ -1772,7 +1738,6 @@
                             .desc {
                                 margin-top: 36px;
                                 color: var(--bs-secondary-02);
-                                text-transform: capitalize;
 
                                 @media (max-width: 575.98px) {
                                     margin-top: 16px;
@@ -1824,7 +1789,6 @@
 
                         .heading {
                             color: var(--bs-white);
-                            text-transform: capitalize;
 
                             br {
                                 @media (max-width: 991.98px) {
@@ -1836,7 +1800,6 @@
                         .desc {
                             margin-block: 27px 24px;
                             color: var(--bs-tint6-grey);
-                            text-transform: capitalize;
 
                             @media (max-width: 767.98px) {
                                 margin-block: 20px;
@@ -1845,8 +1808,8 @@
 
                         .download_app {
                             display: flex;
-                            gap: 24px;
                             align-items: center;
+                            gap: 24px;
 
                             @media (max-width: 767.98px) {
                                 justify-content: space-between;
@@ -1859,8 +1822,8 @@
 
                             .scan_to_download {
                                 display: flex;
-                                gap: 0 21px;
                                 align-items: center;
+                                gap: 0 21px;
 
                                 .qr_code_main {
                                     background-color: var(--bs-white);
@@ -1902,14 +1865,14 @@
                             .available_otr {
                                 .available_ul {
                                     display: flex;
-                                    gap: 0 18px;
                                     align-items: center;
+                                    gap: 0 18px;
 
                                     .available_li {
                                         .available_a {
-                                            padding: 24px;
-                                            border-radius: 100%;
                                             border: 1px solid #394952;
+                                            border-radius: 100%;
+                                            padding: 24px;
                                             transition: var(--transitions);
 
                                             @media (max-width: 1199px) {
@@ -1946,11 +1909,11 @@
 
                 .col_img_otr {
                     .col_img_inr {
+                        position: relative;
                         width: 100%;
                         height: 507px;
                         border-radius: 22px;
                         background-image: linear-gradient(to right, #62d6ed, #ffb2d1, #ffd7a5);
-                        position: relative;
                         overflow: hidden;
 
                         @media (max-width: 575.98px) {
@@ -1962,13 +1925,13 @@
                         }
 
                         .img {
+                            position: absolute;
+                            left: 50%;
+                            bottom: -25%;
                             width: 70%;
                             height: 100%;
                             object-fit: cover;
                             object-position: top;
-                            position: absolute;
-                            left: 50%;
-                            bottom: -25%;
                             transform: translateX(-50%);
                             animation: up-down-anime 4s infinite linear;
                             z-index: 100;
@@ -1977,13 +1940,13 @@
 
                         &::before {
                             content: "";
+                            position: absolute;
+                            bottom: 5%;
+                            left: 5%;
                             width: 238px;
                             height: 238px;
                             background-color: var(--bs-tint2-white);
                             border-radius: 100%;
-                            position: absolute;
-                            bottom: 5%;
-                            left: 5%;
                             animation: circle-anime 4s infinite linear;
 
                             @media (max-width: 575.98px) {
@@ -1994,13 +1957,13 @@
 
                         &::after {
                             content: "";
+                            position: absolute;
+                            top: -30%;
+                            right: -15%;
                             width: 426px;
                             height: 426px;
                             background-color: var(--bs-tint2-white);
                             border-radius: 100%;
-                            position: absolute;
-                            top: -30%;
-                            right: -15%;
                             animation: circle-anime 4s infinite linear reverse;
 
                             @media (max-width: 575.98px) {
@@ -2191,14 +2154,14 @@
                     width: 60px;
                     height: 60px;
                     font-size: 32px;
-                    background-color: var(--bs-tint-purple);
-                    color: var(--bs-white);
-                    border-radius: 100%;
                     display: flex;
                     justify-content: center;
                     align-items: center;
+                    background-color: var(--bs-tint-purple);
+                    color: var(--bs-white);
+                    border-radius: 100%;
                     -webkit-text-stroke: 1px;
-                    transition: all 0.3s;
+                    transition: var(--transitions);
 
                     @media (max-width: 767.98px) {
                         width: 48px;
@@ -2236,9 +2199,9 @@
    **Newsletter Section Start Here***
    ********************************** */
 .newsletter {
-    background: linear-gradient(to right, #ffdfbb, #ffd0e3, #c0c5ff);
     position: relative;
     overflow: hidden;
+    background: linear-gradient(to right, #ffdfbb, #ffd0e3, #c0c5ff);
     padding-block: 179px;
 
     @media (max-width: 991.98px) {
@@ -2262,7 +2225,6 @@
 
                 .heading {
                     color: var(--bs-secondary-01);
-                    text-transform: capitalize;
 
                     br {
                         @media (max-width: 575.98px) {
@@ -2292,22 +2254,22 @@
             }
 
             .form_otr {
-                margin-top: 30px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                margin-top: 30px;
 
                 @media (max-width: 991.98px) {
                     margin-top: 20px;
                 }
 
                 .input_main {
-                    width: 550px;
-                    max-width: 100%;
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
                     gap: 12px;
+                    width: 550px;
+                    max-width: 100%;
                     overflow: hidden;
 
                     @media (min-width: 575.98px) {
@@ -2425,13 +2387,18 @@
             }
 
             &:nth-child(3) {
-                bottom: -79px;
+                bottom: -30px;
                 left: 100px;
                 animation: rotate-anime 7s linear infinite backwards;
+                width: 200px;
+                height: auto;
+
+                .icon {
+                    width: 100%;
+                }
 
                 @media (max-width: 991.98px) {
                     left: 0;
-                    bottom: 0;
                 }
             }
 
@@ -2446,13 +2413,13 @@
 
     &::before {
         content: "";
+        position: absolute;
+        bottom: -50%;
+        left: -30%;
         width: 900px;
         height: 900px;
         background-color: var(--bs-tint1-white);
         backdrop-filter: blur(10px);
-        position: absolute;
-        bottom: -50%;
-        left: -30%;
         border-radius: 100%;
         z-index: 1;
 
@@ -2470,13 +2437,13 @@
 
     &::after {
         content: "";
+        position: absolute;
+        top: -20%;
+        right: -27%;
         width: 900px;
         height: 900px;
         background-color: var(--bs-tint1-white);
         backdrop-filter: blur(10px);
-        position: absolute;
-        top: -20%;
-        right: -27%;
         border-radius: 100%;
         z-index: 1;
 
@@ -2491,8 +2458,6 @@
             content: none;
         }
     }
-
-
 }
 
 /* **********************************

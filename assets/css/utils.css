@@ -17,6 +17,7 @@ h5,
 h6 {
   margin: 0;
   padding: 0;
+  text-transform: capitalize;
 }
 
 ul,
@@ -124,10 +125,16 @@ html {
   --bs-shade1-blue: #4681d9;
   --bs-shade2-blue: #35527e;
   --linear-gradient: linear-gradient(-60deg, var(--bs-tint4-seaBlue), var(--bs-tint1-purple) 55%, var(--bs-shade2-pink) 100%);
+  --pdBtnlg: 28px 62px;
   --pdBtn: 18px 46px;
   --radius: 89px;
   --transitions: all 0.3s linear;
   --transitionMed: all 0.7s linear;
+}
+@media (max-width: 767.98px) {
+  html {
+    --pdBtnlg: 18px 46px;
+  }
 }
 @media (max-width: 575.98px) {
   html {
@@ -155,6 +162,10 @@ body {
 
 .menu_active {
   color: var(--bs-primary-01) !important;
+}
+
+p {
+  text-transform: capitalize;
 }
 
 .heading-h1 {
@@ -404,13 +415,14 @@ body {
   display: flex;
   position: relative;
   overflow: hidden;
-  padding: var(--pdBtn);
+  padding: var(--pdBtnlg);
   border-radius: var(--radius);
   transition: var(--transitions);
 }
 .primary_btn .text {
   font: 18px/160% "Inter-Medium";
   color: var(--bs-white);
+  text-align: center;
 }
 @media (max-width: 575.98px) {
   .primary_btn .text {
@@ -437,7 +449,7 @@ body {
   display: flex;
   position: relative;
   overflow: hidden;
-  padding: var(--pdBtn);
+  padding: var(--pdBtnlg);
   border-radius: var(--radius);
   background-color: var(--bs-white);
   transition: var(--transitionMed);
@@ -447,6 +459,8 @@ body {
   color: var(--bs-secondary-01);
   text-align: center;
   transition: var(--transitions);
+  position: relative;
+  z-index: 1;
 }
 @media (max-width: 575.98px) {
   .secondary_btn .text {
@@ -481,7 +495,7 @@ body {
   display: flex;
   position: relative;
   overflow: hidden;
-  padding: var(--pdBtn);
+  padding: var(--pdBtnlg);
   border-radius: var(--radius);
   background-color: var(--bs-tint12-grey);
   transition: var(--transitionMed);
@@ -491,6 +505,8 @@ body {
   color: var(--bs-secondary-01);
   text-align: center;
   transition: var(--transitions);
+  position: relative;
+  z-index: 1;
 }
 @media (max-width: 575.98px) {
   .secondary_btn2 .text {
@@ -525,7 +541,7 @@ body {
   display: flex;
   position: relative;
   overflow: hidden;
-  padding: var(--pdBtn);
+  padding: var(--pdBtnlg);
   border-radius: var(--radius);
   border: 1px solid var(--bs-tint7-grey);
   transition: var(--transitionMed);
