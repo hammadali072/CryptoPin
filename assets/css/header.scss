@@ -278,10 +278,6 @@
             }
 
             .menu_action_otr {
-                @media (max-width: 991.98px) {
-                    display: none;
-                }
-
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -289,6 +285,10 @@
 
                 @media (max-width: 1199px) {
                     gap: 0 32px;
+                }
+
+                @media (max-width: 991.98px) {
+                    display: none;
                 }
 
                 .menu_otr {

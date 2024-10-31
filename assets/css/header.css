@@ -233,14 +233,14 @@
   align-items: center;
   gap: 0 50px;
 }
-@media (max-width: 991.98px) {
-  .header .container_fluid .header_inr .menu_action_otr {
-    display: none;
-  }
-}
 @media (max-width: 1199px) {
   .header .container_fluid .header_inr .menu_action_otr {
     gap: 0 32px;
+  }
+}
+@media (max-width: 991.98px) {
+  .header .container_fluid .header_inr .menu_action_otr {
+    display: none;
   }
 }
 .header .container_fluid .header_inr .menu_action_otr .menu_otr .menu_ul {
