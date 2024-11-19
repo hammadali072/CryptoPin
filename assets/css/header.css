@@ -283,8 +283,8 @@
   left: 0;
   width: 200px;
   padding-top: 10px;
-  transform: rotateX(30deg) translateY(20px);
-  perspective-origin: bottom;
+  transform: scaleY(0);
+  transform-origin: top center;
   transition: var(--transitions);
   visibility: hidden;
   opacity: 0;
@@ -314,7 +314,7 @@
 .header .container_fluid .header_inr .menu_action_otr .menu_otr .menu_ul .menu_li:hover .dropdown_otr {
   visibility: visible;
   opacity: 1;
-  transform: rotateX(0deg) translateY(0px);
+  transform: scaleY(1);
 }
 .header .container_fluid .header_inr .menu_action_otr .action_otr .login_btn {
   padding: var(--pdBtn);

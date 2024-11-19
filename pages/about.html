@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="shortcut icon" href="/assets/img/fav-icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="/assets/libs/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="/assets/libs/bootstrap-icons/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="/assets/libs/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/assets/css/header.css" />
+    <link rel="stylesheet" href="/assets/css/footer.css" />
+    <link rel="stylesheet" href="/assets/css/utils.css" />
+    <link rel="stylesheet" href="/assets/fonts/fonts.css" />
+    <link rel="stylesheet" href="/assets/css/about.css" />
+</head>
+
+<body>
+    <!-- ===================================
+                    Overlay Start Here
+         =================================== -->
+    <div class="overlay_main">
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasStart" aria-labelledby="offcanvasStartLabel"
+            aria-hidden="true">
+            <div class="offcanvas-body">
+                <div class="logo_main">
+                    <a href="#" class="logo_otr">
+                        <img class="logo_img" src="/assets/img/logo.svg" alt="Logo" />
+                    </a>
+                    <div class="close_icon_otr" data-bs-dismiss="offcanvas" aria-label="Close">
+                        <i class="icon bi bi-x-lg"></i>
+                    </div>
+                </div>
+                <div class="accordion" id="accordionExample">
+                    <ul class="menu_ul">
+                        <li class="menu_li">
+                            <a href="#" class="menu_a heading-XS-Medium">Home</a>
+                        </li>
+                        <li class="menu_li">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        <p class="menu_text heading-XS-Medium">About</p>
+                                        <i class="icon bi bi-caret-down-fill"></i>
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <ul class="dropdown_ul">
+                                            <li class="dropdown_li">
+                                                <a href="#" class="dropdown_a heading-XS-Medium">About</a>
+                                            </li>
+                                            <li class="dropdown_li">
+                                                <a href="#" class="dropdown_a heading-XS-Medium">About Token</a>
+                                            </li>
+                                            <li class="dropdown_li">
+                                                <a href="#" class="dropdown_a heading-XS-Medium">Tokens</a>
+                                            </li>
+                                            <li class="dropdown_li">
+                                                <a href="#" class="dropdown_a heading-XS-Medium">Tokens Single</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="menu_li">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                        <p class="menu_text heading-XS-Medium">Pages</p>
+                                        <i class="icon bi bi-caret-down-fill"></i>
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <ul class="dropdown_ul">
+                                            <li class="dropdown_li">
+                                                <a href="#" class="dropdown_a heading-XS-Medium">Features</a>
+                                            </li>
+                                            <li class="dropdown_li">
+                                                <a href="#" class="dropdown_a heading-XS-Medium">Career</a>
+                                            </li>
+                                            <li class="dropdown_li">
+                                                <a href="#" class="dropdown_a heading-XS-Medium">Blog</a>
+                                            </li>
+                                            <li class="dropdown_li">
+                                                <a href="#" class="dropdown_a heading-XS-Medium">Terms</a>
+                                            </li>
+                                            <li class="dropdown_li">
+                                                <a href="#" class="dropdown_a heading-XS-Medium">Privacy</a>
+                                            </li>
+                                            <li class="dropdown_li">
+                                                <a href="#" class="dropdown_a heading-XS-Medium">404</a>
+                                            </li>
+                                            <li class="dropdown_li">
+                                                <a href="#" class="dropdown_a heading-XS-Medium">LIcenses</a>
+                                            </li>
+                                            <li class="dropdown_li">
+                                                <a href="#" class="dropdown_a heading-XS-Medium">Password</a>
+                                            </li>
+                                            <li class="dropdown_li">
+                                                <a href="#" class="dropdown_a heading-XS-Medium">Changelog</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="menu_li">
+                            <a href="#" class="menu_a heading-XS-Medium">Pricing</a>
+                        </li>
+                        <li class="menu_li">
+                            <a href="#" class="menu_a heading-XS-Medium">Contact</a>
+                        </li>
+                        <li class="menu_li">
+                            <div class="action_otr">
+                                <a href="#" class="login_btn primary_btn">
+                                    <span class="text">Login</span>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ===================================
+                    Overlay End Here
+         =================================== -->
+
+    <!-- ===================================
+                    Header Start Here
+         =================================== -->
+    <div class="alert_otr">
+        <marquee class="alert_text heading-XS" loop="true">
+            Buy & Sell Bitcoin thereum and 100+ cryptos in minutes. Register now & get ₹100 cashback on your first trade
+            of ₹500 or
+            more!
+        </marquee>
+    </div>
+    <header class="header">
+        <div class="container_fluid">
+            <div class="header_inr">
+                <div class="logo_main">
+                    <a href="#" class="logo_otr">
+                        <img class="logo" src="/assets/img/logo.svg" alt="Logo" />
+                    </a>
+                    <div class="menu_icon_otr" data-bs-toggle="offcanvas" data-bs-target="#offcanvasStart"
+                        aria-controls="offcanvasStart">
+                        <i class="icon bi bi-list"></i>
+                    </div>
+                </div>
+                <div class="menu_action_otr">
+                    <nav class="menu_otr">
+                        <ul class="menu_ul">
+                            <li class="menu_li">
+                                <a href="#" class="menu_a menu_active heading-XS-Medium">Home</a>
+                            </li>
+                            <li class="menu_li">
+                                <div class="menu_a heading-XS-Medium">
+                                    <p class="menu_text">About</p>
+                                    <i class="icon bi bi-caret-down-fill"></i>
+                                </div>
+                                <div class="dropdown_otr">
+                                    <div class="dropdown_inr">
+                                        <ul class="dropdown_ul">
+                                            <li class="dropdown_li">
+                                                <a href="#" class="dropdown_a heading-XS-Medium">About</a>
+                                            </li>
+                                            <li class="dropdown_li">
+                                                <a href="#" class="dropdown_a heading-XS-Medium">About Token</a>
+                                            </li>
+                                            <li class="dropdown_li">
+                                                <a href="#" class="dropdown_a heading-XS-Medium">Tokens</a>
+                                            </li>
+                                            <li class="dropdown_li">
+                                                <a href="#" class="dropdown_a heading-XS-Medium">Tokens Single</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="menu_li">
+                                <div class="menu_a heading-XS-Medium">
+                                    <p class="menu_text">Pages</p>
+                                    <i class="icon bi bi-caret-down-fill"></i>
+                                </div>
+                                <div class="dropdown_otr">
+                                    <div class="dropdown_inr">
+                                        <ul class="dropdown_ul">
+                                            <li class="dropdown_li">
+                                                <a href="#" class="dropdown_a heading-XS-Medium">Features</a>
+                                            </li>
+                                            <li class="dropdown_li">
+                                                <a href="#" class="dropdown_a heading-XS-Medium">Career</a>
+                                            </li>
+                                            <li class="dropdown_li">
+                                                <a href="#" class="dropdown_a heading-XS-Medium">Blog</a>
+                                            </li>
+                                            <li class="dropdown_li">
+                                                <a href="#" class="dropdown_a heading-XS-Medium">Terms</a>
+                                            </li>
+                                            <li class="dropdown_li">
+                                                <a href="#" class="dropdown_a heading-XS-Medium">Privacy</a>
+                                            </li>
+                                            <li class="dropdown_li">
+                                                <a href="#" class="dropdown_a heading-XS-Medium">404</a>
+                                            </li>
+                                            <li class="dropdown_li">
+                                                <a href="#" class="dropdown_a heading-XS-Medium">Licenses</a>
+                                            </li>
+                                            <li class="dropdown_li">
+                                                <a href="#" class="dropdown_a heading-XS-Medium">Password</a>
+                                            </li>
+                                            <li class="dropdown_li">
+                                                <a href="#" class="dropdown_a heading-XS-Medium">Changelog</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="menu_li">
+                                <a href="#" class="menu_a heading-XS-Medium">Pricing</a>
+                            </li>
+                            <li class="menu_li">
+                                <a href="#" class="menu_a heading-XS-Medium">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="action_otr">
+                        <a href="#" class="login_btn primary_btn">
+                            <span class="text">Login</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ===================================
+                    Header End Here
+         =================================== -->
+    <!-- ===================================
+                Client Logo Section Start Here
+         =================================== -->
+    <section class="client_logos">
+        <div class="container_fluid">
+            <div class="client_logos_inr">
+                <div class="clients_otr">
+                    <ul class="clients_ul">
+                        <li class="client_li">
+                            <a href="#" class="client_a">
+                                <img class="client_img" src="/assets/img/client-logo-1.png" alt="Client">
+                            </a>
+                        </li>
+                        <li class="client_li">
+                            <a href="#" class="client_a">
+                                <img class="client_img" src="/assets/img/client-logo-2.png" alt="Client">
+                            </a>
+                        </li>
+                        <li class="client_li">
+                            <a href="#" class="client_a">
+                                <img class="client_img" src="/assets/img/client-logo-3.png" alt="Client">
+                            </a>
+                        </li>
+                        <li class="client_li">
+                            <a href="#" class="client_a">
+                                <img class="client_img" src="/assets/img/client-logo-4.png" alt="Client">
+                            </a>
+                        </li>
+                        <li class="client_li">
+                            <a href="#" class="client_a">
+                                <img class="client_img" src="/assets/img/client-logo-5.png" alt="Client">
+                            </a>
+                        </li>
+                        <li class="client_li">
+                            <a href="#" class="client_a">
+                                <img class="client_img" src="/assets/img/client-logo-6.png" alt="Client">
+                            </a>
+                        </li>
+                        <li class="client_li">
+                            <a href="#" class="client_a">
+                                <img class="client_img" src="/assets/img/client-logo-7.png" alt="Client">
+                            </a>
+                        </li>
+                        <li class="client_li">
+                            <a href="#" class="client_a">
+                                <img class="client_img" src="/assets/img/client-logo-8.png" alt="Client">
+                            </a>
+                        </li>
+                        <li class="client_li">
+                            <a href="#" class="client_a">
+                                <img class="client_img" src="/assets/img/client-logo-9.png" alt="Client">
+                            </a>
+                        </li>
+                        <li class="client_li">
+                            <a href="#" class="client_a">
+                                <img class="client_img" src="/assets/img/client-logo-10.png" alt="Clien">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ===================================
+                Client Logo Section End Here
+         =================================== -->
+    <!-- ===================================
+                Crypto App Section Start Here
+         =================================== -->
+    <section class="crypto_app">
+        <div class="container_fluid">
+            <div class="crypto_app_inr">
+                <div class="row row_custom">
+                    <div class="col-lg-6 col_content_otr">
+                        <div class="col_content_inr">
+                            <h2 class="heading heading-h2">Try the future, today. <br> Download
+                                <span class="heading_inr">Cryptop</span>
+                            </h2>
+                            <p class="desc heading-S">Lorem ipsum dolor sit amet consectetur adipiscing
+                                elit sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua ut dolor sit
+                            </p>
+                            <div class="download_app">
+                                <div class="scan_to_download">
+                                    <div class="qr_code_main">
+                                        <a href="#" class="qr_code_otr">
+                                            <img class="qr_code_img" src="assets/img/qr-code.png" alt="Qr-Code">
+                                        </a>
+                                    </div>
+                                    <div class="content_otr">
+                                        <span class="desc heading-S">Scan To Download</span>
+                                        <p class="heading heading-M-IB">IOS & Android</p>
+                                    </div>
+                                </div>
+                                <div class="available_otr">
+                                    <ul class="available_ul">
+                                        <li class="available_li">
+                                            <a href="#" class="available_a">
+                                                <i class="icon ph-fill ph-apple-logo"></i>
+                                            </a>
+                                        </li>
+                                        <li class="available_li">
+                                            <a href="#" class="available_a">
+                                                <i class="icon ph-fill ph-android-logo"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col_img_otr">
+                        <div class="col_img_inr">
+                            <img class="img" src="/assets/img/mobile-img.png" alt="Image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ===================================
+                 Crypto App Section End Here
+         =================================== -->
+    <!-- ===================================
+                       Footer Start Here
+         =================================== -->
+    <footer class="footer">
+        <div class="container_fluid">
+            <div class="footer_inr">
+                <div class="row logo_social_otr">
+                    <div class="col-xl-6 col-lg-6 col-md-6 col_logo_otr">
+                        <div class="logo_main">
+                            <a href="#home" class="logo_otr">
+                                <img class="logo" src="/assets/img/logo.svg" alt="Logo" />
+                            </a>
+                        </div>
+                        <p class="desc heading-S">
+                            Completely synergize resource taxing niche markets. Professionally cultivate service with
+                            robust ideas.
+                            Dynamically.
+                        </p>
+                    </div>
+                    <div class="col-xl-5 col-lg-6 col-md-5 col_social_otr">
+                        <h4 class="heading heading-L">Follow Us:</h4>
+                        <div class="social_otr">
+                            <ul class="social_ul">
+                                <li class="social_li">
+                                    <a href="#" class="social_a">
+                                        <i class="icon bi bi-instagram"></i>
+                                    </a>
+                                </li>
+                                <li class="social_li">
+                                    <a href="#" class="social_a">
+                                        <i class="icon bi bi-facebook"></i>
+                                    </a>
+                                </li>
+                                <li class="social_li">
+                                    <a href="#" class="social_a">
+                                        <i class="icon bi bi-twitter"></i>
+                                    </a>
+                                </li>
+                                <li class="social_li">
+                                    <a href="#" class="social_a">
+                                        <i class="icon bi bi-linkedin"></i>
+                                    </a>
+                                </li>
+                                <li class="social_li">
+                                    <a href="#" class="social_a">
+                                        <i class="icon bi bi-youtube"></i>
+                                    </a>
+                                </li>
+                                <li class="social_li">
+                                    <a href="#" class="social_a">
+                                        <i class="icon fa-brands fa-reddit-alien"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="links_contact_otr">
+                    <div class="col_link_otr">
+                        <div class="col_link_inr">
+                            <h4 class="heading heading-L">Company</h4>
+                            <div class="menu_otr">
+                                <ul class="menu_ul">
+                                    <li class="menu_li">
+                                        <a href="#" class="menu_a heading-S">Home</a>
+                                    </li>
+                                    <li class="menu_li">
+                                        <a href="#" class="menu_a heading-S">About</a>
+                                    </li>
+                                    <li class="menu_li">
+                                        <a href="#" class="menu_a heading-S">Contact</a>
+                                    </li>
+                                    <li class="menu_li">
+                                        <a href="#" class="menu_a heading-S">Blog</a>
+                                    </li>
+                                    <li class="menu_li">
+                                        <a href="#" class="menu_a heading-S">Blog Post</a>
+                                    </li>
+                                    <li class="menu_li">
+                                        <a href="#" class="menu_a heading-S">Pricing</a>
+                                    </li>
+                                    <li class="menu_li">
+                                        <a href="#" class="menu_a heading-S">Pricing Single</a>
+                                    </li>
+                                    <li class="menu_li">
+                                        <a href="#" class="menu_a heading-S">Tokens</a>
+                                    </li>
+                                    <li class="menu_li">
+                                        <a href="#" class="menu_a heading-S">Token Single</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col_link_otr">
+                        <div class="col_link_inr">
+                            <h4 class="heading heading-L">Legal</h4>
+                            <div class="menu_otr">
+                                <ul class="menu_ul">
+                                    <li class="menu_li">
+                                        <a href="#" class="menu_a heading-S">Privacy Policy</a>
+                                    </li>
+                                    <li class="menu_li">
+                                        <a href="#" class="menu_a heading-S">Terms & Conditions</a>
+                                    </li>
+                                    <li class="menu_li">
+                                        <a href="#" class="menu_a heading-S">Wallet terms</a>
+                                    </li>
+                                    <li class="menu_li">
+                                        <a href="#" class="menu_a heading-S">Borrow Terms</a>
+                                    </li>
+                                    <li class="menu_li">
+                                        <a href="#" class="menu_a heading-S">Earn Terms</a>
+                                    </li>
+                                    <li class="menu_li">
+                                        <a href="#" class="menu_a heading-S">Exchange Terms</a>
+                                    </li>
+                                    <li class="menu_li">
+                                        <a href="#" class="menu_a heading-S">Nexo Card Terms</a>
+                                    </li>
+                                    <li class="menu_li">
+                                        <a href="#" class="menu_a heading-S">Affiliate Terms</a>
+                                    </li>
+                                    <li class="menu_li">
+                                        <a href="#" class="menu_a heading-S">Cookies Policy</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col_link_otr">
+                        <div class="col_link_inr">
+                            <h4 class="heading heading-L">Cryptos</h4>
+                            <div class="menu_otr">
+                                <ul class="menu_ul">
+                                    <li class="menu_li">
+                                        <a href="#" class="menu_a heading-S">What is Crypto</a>
+                                    </li>
+                                    <li class="menu_li">
+                                        <a href="#" class="menu_a heading-S">Bitcoin</a>
+                                    </li>
+                                    <li class="menu_li">
+                                        <a href="#" class="menu_a heading-S">Ether</a>
+                                    </li>
+                                    <li class="menu_li">
+                                        <a href="#" class="menu_a heading-S">XRP</a>
+                                    </li>
+                                    <li class="menu_li">
+                                        <a href="#" class="menu_a heading-S">Tether</a>
+                                    </li>
+                                    <li class="menu_li">
+                                        <a href="#" class="menu_a heading-S">EOS</a>
+                                    </li>
+                                    <li class="menu_li">
+                                        <a href="#" class="menu_a heading-S">BAT</a>
+                                    </li>
+                                    <li class="menu_li">
+                                        <a href="#" class="menu_a heading-S">Chainlink</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col_contact_otr">
+                        <div class="col_contact_inr">
+                            <h4 class="heading heading-L">Registered Office Address</h4>
+                            <p class="address heading-S">
+                                <span class="text">Registered office address:</span>
+                                <a href="#" class="address_link">Awlencan Innovations India Limited [CIN no. U104448],
+                                    Opposite Doordarshan T.V. Tower, Drive-In
+                                    Road, Thaltej, NY 380054</a>
+                            </p>
+                            <br />
+                            <p class="contact_otr heading-S">
+                                In case of any query, please Mail
+                                <a href="mailto:Trade@cryptop.com"
+                                    class="contact_link heading-S-Medium">Trade@cryptop.com</a>
+                                Or
+                                <a href="tel:(011) 65444 00025" class="contact_link heading-S-Medium">(011) 65444
+                                    00025</a>
+                            </p>
+                            <div class="disclaimer_otr">
+                                <p class="text heading-S-Medium">
+                                    <span class="inr_text heading-S-SB">Disclaimer:</span>
+                                    Trading in cryptocurrencies are subject to market, technical and legal risks.The
+                                    prices fluctuate
+                                    based on local demand and supply
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright_otr">
+                    <p class="copyright_text heading-XS">
+                        Copyright © Cryptop | Designed by
+                        <a href="#" class="link">Hammad Ali</a>
+                        - Powered by Webflow
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ===================================
+                       Footer End Here
+         =================================== -->
+    <script src="/assets/libs/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="/assets/libs/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
+    <script src="/assets/js/app.js"></script>
+</body>
+
+</html>

@@ -336,8 +336,8 @@
                                 left: 0;
                                 width: 200px;
                                 padding-top: 10px;
-                                transform: rotateX(30deg) translateY(20px);
-                                perspective-origin: bottom;
+                                transform: scaleY(0);
+                                transform-origin: top center;
                                 transition: var(--transitions);
                                 visibility: hidden;
                                 opacity: 0;
@@ -376,7 +376,7 @@
                                 .dropdown_otr {
                                     visibility: visible;
                                     opacity: 1;
-                                    transform: rotateX(0deg) translateY(0px);
+                                    transform: scaleY(1);
                                 }
                             }
                         }

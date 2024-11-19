@@ -700,6 +700,17 @@ p {
     transform: scale(1);
   }
 }
+@keyframes heartbeat-anime {
+  0% {
+    background-size: 150%;
+  }
+  50% {
+    background-size: 180%;
+  }
+  100% {
+    background-size: 150%;
+  }
+}
 /* **********************************
    *********Animations End***********
    ********************************** */
